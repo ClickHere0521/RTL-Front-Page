@@ -18,7 +18,7 @@ body {
   background-color: #fff;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
   #page-wrapper {
     position: inherit;
     margin: 0 250px 0 0;
@@ -106,13 +106,13 @@ body {
   content: "\f104";
 }
 
-.sidebar .active>a>.fa.arrow:before {
+.sidebar .active > a > .fa.arrow:before {
   content: "\f107";
 }
 
 .sidebar .nav-second-level li,
 .sidebar .nav-third-level li {
-  border-bottom: 0!important;
+  border-bottom: 0 !important;
 }
 
 .sidebar .nav-second-level li a {
@@ -123,7 +123,7 @@ body {
   padding-right: 52px;
 }
 
-@media(min-width:768px) {
+@media (min-width: 768px) {
   .sidebar {
     z-index: 1;
     position: absolute;
@@ -141,7 +141,7 @@ body {
 .btn-outline {
   color: inherit;
   background-color: transparent;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .btn-primary.btn-outline {
@@ -207,7 +207,7 @@ body {
 }
 
 .login-panel {
-  margin-top: 25%;
+  margin-top: 3%;
 }
 
 .flot-chart {
@@ -244,7 +244,7 @@ table.dataTable thead .sorting:after {
   content: "\f0dc";
   float: left;
   font-family: fontawesome;
-  color: rgba(50,50,50,.5);
+  color: rgba(50, 50, 50, 0.5);
 }
 
 .btn-circle {
@@ -275,11 +275,11 @@ table.dataTable thead .sorting:after {
   line-height: 1.33;
 }
 
-.show-grid [class^=col-] {
+.show-grid [class^="col-"] {
   padding-top: 10px;
   padding-bottom: 10px;
   border: 1px solid #ddd;
-  background-color: #eee!important;
+  background-color: #eee !important;
 }
 
 .show-grid {
@@ -346,7 +346,152 @@ table.dataTable thead .sorting:after {
 
 /*komicho*/
 ul.pull-left {
-    float: left;
-    left: 0;
-    right: auto;
+  float: left;
+  left: 0;
+  right: auto;
 }
+
+.login-body {
+  background: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.26),
+      rgba(0, 0, 0, 0.26)
+    ),
+    url(../../images/login_background.svg);
+  /* background-size: cover; */
+}
+
+.login-heading {
+  margin-top: 30%;
+}
+
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #485272;
+  opacity: 1; /* Firefox */
+}
+
+input::-webkit-input-placeholder {
+  font-size: 20px;
+  line-height: 3;
+  color: #485272;
+}
+
+input[id="cb1"] + label {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid #bcbcbc;
+  border-radius: 2px;
+  cursor: pointer;
+}
+input[id="cb1"]:checked + label:after {
+  position: relative;
+  top: -4px;
+  left: 2px;
+  content: "\2714";
+  font-size: 14px;
+}
+input[id="cb1"] {
+  display: none;
+}
+/* Customize the label (the container) */
+.custom-radio {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.custom-radio input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom radio button */
+.checkmark {
+  position: absolute;
+  top: 0;
+  /* left: 0; */
+  height: 20px;
+  width: 20px;
+  background-color: transparent;
+  border: 2px solid #78849e;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.custom-radio:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the radio button is checked, add a blue background */
+.custom-radio input:checked ~ .checkmark {
+  background-color: transparent;
+  border: 2px solid #78849e;
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.custom-radio input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.custom-radio .checkmark:after {
+  top: 3px;
+  left: 3px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #78849e;
+}
+#btn1 {
+  background-color: #bfc5d2;
+  border-bottom-right-radius: 10px;
+  border-top-right-radius: 10px;
+  padding-bottom: 1.3rem;
+  padding-top: 1.3rem;
+  font-size: 18px;
+  color: #78849e;
+}
+/* #btn1:active {
+  background-color: #485272;
+  color: white;
+} */
+/* #btn1:focus {
+  background-color: #485272;
+  color: white;
+} */
+#btn2 {
+  background-color: #485272;
+  border-bottom-left-radius: 10px;
+  border-top-left-radius: 10px;
+  padding-bottom: 1.3rem;
+  padding-top: 1.3rem;
+  font-size: 18px;
+}
+/* #btn2:active {
+  background-color: #bfc5d2;
+  color: #78849e;
+} */
+/* #btn2:focus {
+  background-color: #bfc5d2;
+  color: #78849e;
+} */
