@@ -50,109 +50,92 @@
                 <div class="row">
                     <div class="col-md-6 col-md-offset-3 col-sm-9 col-xs-10">
                         <div class="login-heading">
-                            <h3 class="panel-title" style="color: #F9F9F9;
-                                font-size: 36px; font-weight: bold;">כניסה
+                            <h3 class="panel-title cus-panel-title">כניסה
                                 למערכת</h3>
                         </div>
-                        <div class="login-panel panel panel-default"
-                            style="width:
-                            570px; height: 570px; border-radius: 15px;
-                            background-color: #F9F9F9;">
-                            <div class="panel-body" style="padding: 45px">
-                                <h3 class="panel-title" style="font-size: 18px;
-                                    color: #485272;">כניסה
-                                    עם</h3>
-                                <div class="expanded button-group"
-                                    style="margin-top: 20px; margin-bottom:
-                                    30px;">
-                                    <a class="button" 
-                                        data-toggle="pill" href="#content1" id="btn1">
-                                        הודעת SMS
-
-                                    </a>
-                                    <a class="button"
-                                        data-toggle="pill" href="#content2" id="btn2">שם
-                                        משתמש וסיסמה</a>
+                        <div class="login-panel panel panel-default cus-panel">
+                            <div class="panel-body cus-panel-body">
+                                <div class="cus-panel-header">
+                                    <div class="cus-panel-header-1" style="display: none;">
+                                        <h3 class="panel-title cus-panel-title-3">שחכתי שם משתמש</h3>
+                                        <h3 class="panel-title cus-panel-title-4">יש להזין את הפרטים הבאים על מנת שנוכל 
+                                        להציג לך את שם המשתמש</h3>
+                                    </div>
+                                    <div class="cus-panel-header-2">
+                                        <h3 class="panel-title cus-panel-title-2">כניסהעם</h3>
+                                        <div class="expanded button-group
+                                            cus-btn-grp">
+                                            <a class="button"
+                                                data-toggle="pill" href="#content1"
+                                                id="btn1">
+                                                הודעת SMS
+                                            </a>
+                                            <a class="button"
+                                                data-toggle="pill" href="#content2"
+                                                id="btn2">שם
+                                                משתמש וסיסמה</a>
+                                        </div>
+                                    </div>
                                 </div>
+
                                 <div class="tab-content">
                                     <div class="tab-pane active"
                                         id="content2">
                                         <form role="form">
                                             <fieldset>
-                                                <div class="form-group">
-                                                    <input class="form-control"
+                                                <div class="form-group cus-form-1">
+                                                    <input class="form-control
+                                                        cus-input-1"
                                                         placeholder="שם משתמש"
                                                         name="email"
-                                                        type="email" autofocus
-                                                        style="height: 50px;
-                                                        border-color: #BFC5D2;
-                                                        border-radius: 10px;
-                                                        margin-bottom: 0px;
-                                                        margin-top: 30px;">
-                                                    <p style="font-size: 13px;
-                                                        color:
-                                                        #1E87F0; text-align:
-                                                        end;">שכחתי
-                                                        שם משתמש</p>
+                                                        type="email" autofocus>
+                                                    <p class="forgot-name"><a
+                                                            id="forgot-name">שכחתי
+                                                            שם משתמש</a></p>
                                                 </div>
-                                                <div class="form-group"
+                                                <div class="form-group cus-form-2"
                                                     style="margin-bottom:
                                                     34px;">
-                                                    <input class="form-control"
+                                                    <input class="form-control
+                                                        cus-input-2"
                                                         placeholder="תעודת זהות"
                                                         name="password"
                                                         type="password"
-                                                        value="" style="height:
-                                                        50px;
-                                                        border-color: #BFC5D2;
-                                                        border-radius: 10px;
-                                                        margin-bottom: 0px;">
+                                                        value="">
                                                 </div>
-                                                <div class="form-group">
-                                                    <input class="form-control"
+                                                <div class="form-group cus-form-3">
+                                                    <input class="form-control
+                                                        cus-input-3"
                                                         placeholder="סיסמה"
                                                         name="password"
                                                         type="password"
-                                                        value="" style="height:
-                                                        50px;
-                                                        border-color: #BFC5D2;
-                                                        border-radius: 10px;
-                                                        margin-bottom: 0px;">
-                                                    <p style="font-size: 13px;
-                                                        color:
-                                                        #1E87F0; text-align:
-                                                        end;">שכחתי
+                                                        value="">
+                                                    <p class="p-2">שכחתי
                                                         סיסמה</p>
                                                 </div>
                                             </fieldset>
                                         </form>
                                     </div>
                                     <div class="tab-pane active"
-                                        id="content1">
+                                        id="content1" style="display: none;">
                                         <form role="form">
                                             <fieldset>
                                                 <div class="form-group">
-                                                    <input class="form-control"
+                                                    <input class="form-control
+                                                        cus-input-4"
                                                         placeholder="תעודת זהות"
                                                         name="email"
-                                                        type="email" autofocus
-                                                        style="height: 50px;
-                                                        border-color: #BFC5D2;
-                                                        border-radius: 10px;
-                                                        margin-bottom: 25px;">
+                                                        type="email" autofocus>
                                                 </div>
                                                 <div class="form-group"
                                                     style="margin-bottom:
                                                     25px;">
-                                                    <input class="form-control"
+                                                    <input class="form-control
+                                                        cus-input-5"
                                                         placeholder="טלפון נייד"
                                                         name="password"
                                                         type="password"
-                                                        value="" style="height:
-                                                        50px;
-                                                        border-color: #BFC5D2;
-                                                        border-radius: 10px;
-                                                        margin-bottom: 0px;">
+                                                        value="">
                                                 </div>
                                                 <div class="form-group">
                                                     <p style="font-size: 18px;
@@ -161,7 +144,9 @@
                                                         קוד
                                                         באמצעות</p>
                                                 </div>
-                                                <div class="row" style="margin-bottom: 48px;">
+                                                <div class="row"
+                                                    style="margin-bottom:
+                                                    48px;">
                                                     <div class="col-md-1
                                                         col-sm-1">
                                                         <label
@@ -176,7 +161,9 @@
                                                         </label>
                                                     </div>
                                                     <div class="col-md-4
-                                                        col-sm-4"><p style="font-size: 18px;" >בהודעת SMS</p></div>
+                                                        col-sm-4"><p
+                                                            style="font-size:
+                                                            18px;">בהודעת SMS</p></div>
                                                     <div class="col-md-1
                                                         col-sm-1">
                                                         <label
@@ -191,21 +178,39 @@
                                                         </label>
                                                     </div>
                                                     <div class="col-md-4
-                                                        col-sm-4"><p style="font-size: 18px;">בהודעה קולית</p></div>
+                                                        col-sm-4"><p
+                                                            style="font-size:
+                                                            18px;">בהודעה קולית</p></div>
                                                 </div>
-
-
-
                                             </fieldset>
                                         </form>
+                                    </div>
+                                    <div id="content3" style="display: none;">
+                                        <div style="text-align: center;">
+                                            <div style="font-size: 16px; margin-top: 50px;">קוד הזיהוי נשלח למספר הטלפון שמספרו</div>
+                                            <div style="font-size: 24px; margin-top: 10px;">XXX  XXX X005</div>
+                                            <div style="font-size: 16px; margin-top: 10px;">יש להקליד את הקוד שהתקבל</div>    
+                                            <input class="form-control
+                                            cus-input-3"
+                                            placeholder="הקלד קוד"
+                                            name="password"
+                                            type="password"
+                                            value=""
+                                            style="margin-top: 30px; margin-bottom: 67px !important;"
+                                            >
+                                        </div>
                                     </div>
                                 </div>
                                 <!-- Change this to a button or input when using this as a form -->
                                 <div class="row">
                                     <div class="col-md-6
                                         col-sm-6
-                                        col-xs-6">
-                                        <div class="checkbox">
+                                        col-xs-6" id="forget-btn">
+                                        <a 
+                                        class="btn
+                                        btn-lg
+                                        btn-block btn-confirm-2" style="display: none;">חזור</a>
+                                        <div class="checkbox" id="checkbox-1">
                                             <label style="color:
                                                 #485272;
                                                 font-size:
@@ -225,25 +230,31 @@
                                                 תנאי השימוש
                                             </label>
                                         </div>
+                                        <div class="checkbox" id="checkbox-2" style="display: none;">
+                                            <label style="color:
+                                                #485272;
+                                                font-size:
+                                                16px;
+                                                padding-left:
+                                                0px;">
+                                                <input
+                                                    name="remember"
+                                                    type="checkbox"
+                                                    value="Remember
+                                                    Me"
+                                                    style="margin-right:
+                                                    -20px;
+                                                    margin-top:
+                                                    8px;">לא קיבלתי קוד? שלח שוב</label>
+                                        </div>
                                     </div>
                                     <div class="col-md-6
                                         col-sm-6
                                         col-xs-6">
-                                        <a href="index.html"
+                                        <a
                                             class="btn
                                             btn-lg
-                                            btn-block"
-                                            style="border: 0;
-                                            font-size: 18px;
-                                            color:
-                                            #F9F9F9; background:
-                                            linear-gradient(#7ABBFC,
-                                            #1A70C6);
-                                            border-radius:
-                                            30px; padding-top:
-                                            12px;
-                                            padding-bottom:
-                                            12px;">המשך</a>
+                                            btn-block btn-confirm">המשך</a>
                                     </div>
                                 </div>
                             </div>
