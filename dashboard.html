@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+
+        <title>Dashboard</title>
+
+        <!-- Bootstrap Core CSS -->
+        <link href="css/rtl/bootstrap.min.css" rel="stylesheet">
+
+        <!-- not use this in ltr -->
+        <link href="css/rtl/bootstrap.rtl.css" rel="stylesheet">
+
+        <!-- MetisMenu CSS -->
+        <link href="css/plugins/metisMenu/metisMenu.min.css" rel="stylesheet">
+        <!-- Timeline CSS -->
+        <link href="css/plugins/timeline.css" rel="stylesheet">
+
+        <!-- Custom CSS -->
+        <link href="css/rtl/sb-admin-2.css" rel="stylesheet">
+
+        <!-- Morris Charts CSS -->
+        <link href="css/plugins/morris.css" rel="stylesheet">
+
+        <!-- Custom Fonts -->
+        <link href="css/font-awesome/font-awesome.min.css" rel="stylesheet"
+            type="text/css">
+
+        <!-- Compressed CSS -->
+        <link rel="stylesheet"
+            href="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/css/foundation.min.css"
+            integrity="sha256-ogmFxjqiTMnZhxCqVmcqTvjfe1Y/ec4WaRj/aQPvn+I="crossorigin="anonymous">
+        <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+        <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+        <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    </head>
+
+    <body style="overflow: hidden; font-family:Arial, Helvetica, sans-serif; background-color: #7ABBFC;">
+        <div>
+            <div class="row">
+                <div class="col-md-1" style="background-color: #485272; height:
+                    100vh; color: white; text-align: center; padding-left: 0px; width: 10%;">
+                    <div class="das-logo" style="font-size: 36px;"> LOGO </div>
+                    <div class="das-sidebar-item">
+                        <div>
+                            <img src="./images/ic_folder_shared_24px.svg">
+                            <div class="das-contact" style="font-size: 20px; margin-top: 6px;">
+                                לקוחות</div>
+                        </div>
+                        <div> <img src="./images/ic_build_24px.svg">
+                            <div class="das-crm" style="font-size: 20px; margin-top: 6px;"> CRM</div></div>
+                        <div> <img src="./images/Allocation.svg">
+                            <div class="das-exp" style="font-size: 20px; margin-top: 6px;">
+                                סימולטור</div>
+                        </div>
+                        <div><img src="./images/applause.svg">
+                            <div class="das-data" style="font-size: 20px; margin-top: 6px;">
+                                קליטת
+                                נתונים</div></div>
+                        <div>
+
+                            <img src="./images/Allocation.svg">
+                            <div class="das-pro" style="font-size: 20px; margin-top: 6px;"> מעקב
+                                ביצוע</div>
+                        </div>
+                        <div>
+                            <img src="./images/ic_description_24px.svg">
+                            <div class="das-log" style="font-size: 20px;"> Logs</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-8" style="background-color: #F4F7F8; height: 100vh; padding-top: 2rem;"> 
+                    <div class="row">
+                        <p style="font-size: 35px; font-weight: 500; padding-right: 7rem; margin-bottom: 34px;" >שלום, מיכאל</p>
+                        <div class="col-md-1">
+                        </div>
+                        <div class="col-md-2 col-sm-6 col-xs-12">
+                            <a class="btn btn-lg btn-block das-btn-active" id="das-btn-1" style="background-color: #1E87F0; color: white; font-size: 20px; border-radius: 15px;   box-shadow: 0px 1px 5px rgb(0 0 0 / 30%); padding-top: 1rem; padding-bottom: 1rem;">
+                                ימי הולדת <span id="das-btn-spn-1" style="color: white;">(6)</span>
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-sm-6 col-xs-12">
+                            <a class="btn btn-lg btn-block das-btn-active" id="das-btn-2" style="background-color: #FFFFFF; color: #1E87F0; font-size: 20px; border-radius: 15px;   box-shadow: 0px 1px 5px rgb(0 0 0 / 30%); padding-top: 1rem; padding-bottom: 1rem;">
+                                משימות <span id="das-btn-spn-2" style="color: #515151;">(8)</span>
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-sm-6 col-xs-12">
+                            <a class="btn btn-lg btn-block das-btn-active" id="das-btn-3" style="background-color: #FFFFFF; color: #1E87F0; font-size: 20px; border-radius: 15px;   box-shadow: 0px 1px 5px rgb(0 0 0 / 30%); padding-top: 1rem; padding-bottom: 1rem;">
+                                תזכורות <span id="das-btn-spn-3" style="color: #515151;">(0)</span>
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-sm-6 col-xs-12">
+                            <a class="btn btn-lg btn-block das-btn-active" id="das-btn-4" style="background-color: #FFFFFF; color: #1E87F0; font-size: 20px; border-radius: 15px;   box-shadow: 0px 1px 5px rgb(0 0 0 / 30%); padding-top: 1rem; padding-bottom: 1rem;">
+                                פגישות <span id="das-btn-spn-4" style="color: #515151;">(9)</span>
+                            </a>
+                        </div>
+                        <div class="col-md-2 col-sm-6 col-xs-12">
+                            <a class="btn btn-lg btn-block das-btn-active" id="das-btn-5" style="background-color: #FFFFFF; color: #1E87F0; font-size: 20px; border-radius: 15px;   box-shadow: 0px 1px 5px rgb(0 0 0 / 30%); padding-top: 1rem; padding-bottom: 1rem;">
+                                חריגים <span id="das-btn-spn-5" style="color: #515151;">(7)</span>
+                            </a>
+                        </div>
+                    </div>  
+                    <div class="row">
+                        <div class="col-md-1"></div>
+                        <div class="das-search col-md-10">
+                           <input type="text" class="das-searchTerm" placeholder="חיפוש">
+                           <button type="submit" class="das-searchButton">
+                             <i class="fa fa-search"></i>
+                          </button>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>  
+                    <div class="row">
+                        <div class="col-md-1"></div>
+
+                        <div class="das-tbl col-md-10" >
+                            <div class="row" style="padding-top: 20px; padding-right: 30px; padding-left: 40px; padding-bottom: 10px; background-color: white; box-shadow: 0px 1px 5px rgb(0 0 0 / 30%); border-radius: 18px; margin-top: 20px; height: 40vh; margin-left: 0px; margin-right: 0px;">
+                                <div style="display: none;">
+                                    <div class="das-tbl-head">
+                                        <p style="font-size: 24px; font-weight: bold; color: #1E87F0;">ימי הולדת של לקוחות</p>
+                                    </div>
+                                    <div class="col-md-1">
+                                        <div>
+                                            <label class="custom-radio" style="color:#485272; top: 24px;">
+                                                <input type="checkbox">
+                                                <span class="checkmark-2"></span>
+                                            </label>
+                                            <label class="custom-radio" style="color:#485272; top: 78px;">
+                                                <input type="checkbox">
+                                                <span class="checkmark-2"></span>
+                                            </label>
+                                            <label class="custom-radio" style="color:#485272; top: 132px;">
+                                                <input type="checkbox">
+                                                <span class="checkmark-2"></span>
+                                            </label>
+                                            <label class="custom-radio" style="color:#485272; top: 186px;">
+                                                <input type="checkbox">
+                                                <span class="checkmark-2"></span>
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-11">
+                                        <div class="das-tbl-body" >
+                                            <table class="table table-condensed">
+                                                <thead>
+                                                  <tr>
+                                                    <th style="width: 10%; font-weight: bold;">שם</th>
+                                                    <th style="width: 30%; font-weight: bold;">חברה</th>
+                                                    <th style="width: 30%; font-weight: bold;">טלפון</th>
+                                                    <th style="width: 30%; font-weight: bold;">טלפון</th>
+                                                  </tr>
+                                                </thead>
+                                                <tbody>
+                                                  <tr>
+                                                    <td>שם</td>
+                                                    <td>חברה</td>
+                                                    <td>טלפון</td>
+                                                    <td>john@example.com</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>שם</td>
+                                                    <td>חברה</td>
+                                                    <td>טלפון</td>
+                                                    <td>john@example.com</td>
+                                                  </tr>
+                                                  <tr>
+                                                    <td>שם</td>
+                                                    <td>חברה</td>
+                                                    <td>טלפון</td>
+                                                    <td>john@example.com</td>
+                                                  </tr>
+                                                  <tr style="border-bottom: 1px solid #ddd;">
+                                                    <td>שם</td>
+                                                    <td>חברה</td>
+                                                    <td>טלפון</td>
+                                                    <td>john@example.com</td>
+                                                  </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: none;">
+                                    <div class="das-tbl-head">
+                                        <p style="font-size: 24px; font-weight: bold; color: #1E87F0;">משימות בטיפול</p>
+                                    </div>
+                                    <div class="row" style="margin-bottom: 10px;" >
+                                        <div class="col-md-2" style="border-right: 3px solid red; margin-right: 17px;">
+                                            <p style="font-size: 20px; font-weight: bold; color: #485272; margin-bottom: 0;" >נושא</p>
+                                            <p style="font-size: 16px; color: #BBBEC7; margin-bottom: 0;">סימולטור</p>
+                                        </div>
+                                        <div class="col-md-9" style="text-align: end; padding-top: 16px;">
+                                            <img src="./images/ic_more_vert_24px.svg">
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom: 10px;" >
+                                        <div class="col-md-2" style="border-right: 3px solid red; margin-right: 17px;">
+                                            <p style="font-size: 20px; font-weight: bold; color: #485272; margin-bottom: 0;" >נושא</p>
+                                            <p style="font-size: 16px; color: #BBBEC7; margin-bottom: 0;">סימולטור</p>
+                                        </div>
+                                        <div class="col-md-9" style="text-align: end; padding-top: 16px;">
+                                            <img src="./images/ic_more_vert_24px.svg">
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom: 10px;" >
+                                        <div class="col-md-2" style="border-right: 3px solid red; margin-right: 17px;">
+                                            <p style="font-size: 20px; font-weight: bold; color: #485272; margin-bottom: 0;" >נושא</p>
+                                            <p style="font-size: 16px; color: #BBBEC7; margin-bottom: 0;">סימולטור</p>
+                                        </div>
+                                        <div class="col-md-9" style="text-align: end; padding-top: 16px;">
+                                            <img src="./images/ic_more_vert_24px.svg">
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom: 10px;" >
+                                        <div class="col-md-2" style="border-right: 3px solid red; margin-right: 17px;">
+                                            <p style="font-size: 20px; font-weight: bold; color: #485272; margin-bottom: 0;" >נושא</p>
+                                            <p style="font-size: 16px; color: #BBBEC7; margin-bottom: 0;">סימולטור</p>
+                                        </div>
+                                        <div class="col-md-9" style="text-align: end; padding-top: 16px;">
+                                            <img src="./images/ic_more_vert_24px.svg">
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom: 10px;" >
+                                        <div class="col-md-2" style="border-right: 3px solid red; margin-right: 17px;">
+                                            <p style="font-size: 20px; font-weight: bold; color: #485272; margin-bottom: 0;" >נושא</p>
+                                            <p style="font-size: 16px; color: #BBBEC7; margin-bottom: 0;">סימולטור</p>
+                                        </div>
+                                        <div class="col-md-9" style="text-align: end; padding-top: 16px;">
+                                            <img src="./images/ic_more_vert_24px.svg">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div style="display: block;">
+                                    <div class="das-tbl-head row">
+                                        <div class="col-md-2">
+                                            <p style="font-size: 24px; font-weight: bold; color: #1E87F0;">תזכורות</p>
+                                        </div>
+                                        <div class="col-md-1">
+                                            <p>חודש</p>
+                                        </div>שבוע
+                                        <div class="col-md-1">
+                                            <p>שבוע</p>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p>יום</p>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom: 10px;" >
+                                        <div class="col-md-2" style="border-right: 3px solid red; margin-right: 17px;">
+                                            <p style="font-size: 20px; font-weight: bold; color: #485272; margin-bottom: 0;" >נושא</p>
+                                            <p style="font-size: 16px; color: #BBBEC7; margin-bottom: 0;">סימולטור</p>
+                                        </div>
+                                        <div class="col-md-9" style="text-align: end; padding-top: 16px;">
+                                            <img src="./images/ic_more_vert_24px.svg">
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom: 10px;" >
+                                        <div class="col-md-2" style="border-right: 3px solid red; margin-right: 17px;">
+                                            <p style="font-size: 20px; font-weight: bold; color: #485272; margin-bottom: 0;" >נושא</p>
+                                            <p style="font-size: 16px; color: #BBBEC7; margin-bottom: 0;">סימולטור</p>
+                                        </div>
+                                        <div class="col-md-9" style="text-align: end; padding-top: 16px;">
+                                            <img src="./images/ic_more_vert_24px.svg">
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom: 10px;" >
+                                        <div class="col-md-2" style="border-right: 3px solid red; margin-right: 17px;">
+                                            <p style="font-size: 20px; font-weight: bold; color: #485272; margin-bottom: 0;" >נושא</p>
+                                            <p style="font-size: 16px; color: #BBBEC7; margin-bottom: 0;">סימולטור</p>
+                                        </div>
+                                        <div class="col-md-9" style="text-align: end; padding-top: 16px;">
+                                            <img src="./images/ic_more_vert_24px.svg">
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom: 10px;" >
+                                        <div class="col-md-2" style="border-right: 3px solid red; margin-right: 17px;">
+                                            <p style="font-size: 20px; font-weight: bold; color: #485272; margin-bottom: 0;" >נושא</p>
+                                            <p style="font-size: 16px; color: #BBBEC7; margin-bottom: 0;">סימולטור</p>
+                                        </div>
+                                        <div class="col-md-9" style="text-align: end; padding-top: 16px;">
+                                            <img src="./images/ic_more_vert_24px.svg">
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom: 10px;" >
+                                        <div class="col-md-2" style="border-right: 3px solid red; margin-right: 17px;">
+                                            <p style="font-size: 20px; font-weight: bold; color: #485272; margin-bottom: 0;" >נושא</p>
+                                            <p style="font-size: 16px; color: #BBBEC7; margin-bottom: 0;">סימולטור</p>
+                                        </div>
+                                        <div class="col-md-9" style="text-align: end; padding-top: 16px;">
+                                            <img src="./images/ic_more_vert_24px.svg">
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-1"></div>
+                    </div>                    
+                </div>
+                <div class="col-md-3" style="width: 23%; background-color: #7ABBFC; height: 100vh;">
+                    <div class="das-timeline" style="margin-top: 3rem; margin-left: 1rem; margin-right: 1rem; background-color: white; border-radius: 15px; padding: 2rem;">
+                        <div class="das-timeline-head row">
+                            <p class="col-sm-6 col-xs-6" style="font-size: 24px; font-weight: bold; color: #1E87F0;" >
+                                יומן איגוני
+                            </p>
+                            <p class="col-sm-6 col-xs-6" style="font-size: 24px; font-weight: bold; color: #485272;">
+                                25.02.2021
+                            </p>
+                        </div>
+                        <div class="das-timeline-head row">
+                            <p class="col-sm-3 col-xs-3" style="font-size: 16px;" >
+                                תאריך
+                            </p>
+                            <p class="col-sm-4 col-xs-4" style="font-size: 16px;" >
+                                03.09.2020
+                            </p>
+                            <div class="col-sm-5 col-xs-5">
+                                <img src="./images/ic_date_range_24px.svg" style="width: 18px;" >
+                            </div>
+                        </div>
+                        <div class="das-timeline-body">
+                            <div class="row">
+                                <div class="col-xs-3" style="font-size: 16px; margin-top: 7px;" >
+                                    08:00
+                                </div>
+                                <div class="datimeline-badge col-xs-3"><img src="./images/timeline_blue.svg"></i>
+                                </div>
+                                <div class="col-xd-4">
+                                    <p style="font-size: 18px; font-weight: bold; margin-bottom: -10px;">נושא</p>
+                                    <p style="font-size: 14px; margin-bottom: 0;">סימולטור</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3" style="font-size: 16px; margin-top: 7px;" >
+                                    09:00
+                                </div>
+                                <div class="datimeline-badge col-xs-3"><img src="./images/timeline_blue.svg"></i>
+                                </div>
+                                <div class="col-xd-4">
+                                    <p style="font-size: 18px; font-weight: bold; margin-bottom: -10px;">נושא</p>
+                                    <p style="font-size: 14px; margin-bottom: 0;">סימולטור</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3" style="font-size: 16px; margin-top: 7px;" >
+                                    10:00
+                                </div>
+                                <div class="datimeline-badge col-xs-3"><img src="./images/timeline_blue.svg"></i>
+                                </div>
+                                <div class="col-xd-4">
+                                    <p style="font-size: 18px; font-weight: bold; margin-bottom: -10px;">נושא</p>
+                                    <p style="font-size: 14px; margin-bottom: 0;">סימולטור</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3" style="font-size: 16px; margin-top: 7px;" >
+                                    11:00
+                                </div>
+                                <div class="datimeline-badge col-xs-3"><img src="./images/timeline_green.svg"></i>
+                                </div>
+                                <div class="col-xd-4">
+                                    <p style="font-size: 18px; font-weight: bold; margin-bottom: -10px;">נושא</p>
+                                    <p style="font-size: 14px; margin-bottom: 0;">סימולטור</p>
+                                </div>
+                            </div>                         
+                            <div class="row">
+                                <div class="col-xs-3" style="font-size: 16px; margin-top: 7px;" >
+                                    12:00
+                                </div>
+                                <div class="datimeline-badge col-xs-3"><img src="./images/timeline_pink.svg"></i>
+                                </div>
+                                <div class="col-xd-4">
+                                    <p style="font-size: 18px; font-weight: bold; margin-bottom: -10px;">נושא</p>
+                                    <p style="font-size: 14px; margin-bottom: 0;">סימולטור</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3" style="font-size: 16px; margin-top: 7px;" >
+                                    13:00
+                                </div>
+                                <div class="datimeline-badge col-xs-3"><img src="./images/timeline_orange.svg"></i>
+                                </div>
+                                <div class="col-xd-4">
+                                    <p style="font-size: 18px; font-weight: bold; margin-bottom: -10px;">נושא</p>
+                                    <p style="font-size: 14px; margin-bottom: 0;">סימולטור</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3" style="font-size: 16px; margin-top: 7px;" >
+                                    14:00
+                                </div>
+                                <div class="datimeline-badge col-xs-3"><img src="./images/timeline_yellow.svg"></i>
+                                </div>
+                                <div class="col-xd-4">
+                                    <p style="font-size: 18px; font-weight: bold; margin-bottom: -10px;">נושא</p>
+                                    <p style="font-size: 14px; margin-bottom: 0;">סימולטור</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3" style="font-size: 16px; margin-top: 7px;" >
+                                    15:00
+                                </div>
+                                <div class="datimeline-badge col-xs-3"><img src="./images/timeline_blue.svg"></i>
+                                </div>
+                                <div class="col-xd-4">
+                                    <p style="font-size: 18px; font-weight: bold; margin-bottom: -10px;">נושא</p>
+                                    <p style="font-size: 14px; margin-bottom: 0;">סימולטור</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-3" style="font-size: 16px; margin-top: 7px;" >
+                                    16:00
+                                </div>
+                                <div class="datimeline-badge col-xs-3"><img src="./images/timeline_red.svg"></i>
+                                </div>
+                                <div class="col-xd-4">
+                                    <p style="font-size: 18px; font-weight: bold; margin-bottom: -10px;">נושא</p>
+                                    <p style="font-size: 14px; margin-bottom: 0;">סימולטור</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div style="margin-top: 3rem; margin-left: 1rem; margin-right: 1rem; background-color: white; border-radius: 15px; padding: 2rem;" >
+                        <div class="das-timeline-head row">
+                            <p class="col-sm-6 col-xs-6" style="font-size: 24px; font-weight: bold; color: #1E87F0;" >
+                                מדדי שוק
+                            </p>
+                        </div>
+                        <div class="das-timeline-head row">
+                            <p class="col-sm-3 col-xs-3" style="font-size: 16px;" >
+                                תאריך 
+                            </p>
+                            <p class="col-sm-4 col-xs-4" style="font-size: 16px;" >
+                                18.03.2021
+                            </p>
+                        </div>
+                        <div class="row" style="margin-bottom: 30px; margin-top: 10px;">
+                            <div class="col-xs-4" style="font-size: 18px; font-weight: bold;" >
+                                מדד
+                            </div>
+                            <div class="col-xs-5" style="font-size: 18px; font-weight: bold;" >
+                                תאריך
+                            </div>
+                            <div class="col-xs-3" style="font-size: 18px; font-weight: bold;" >
+                                שער
+                            </div>
+                        </div>
+                        <div>
+                            <div class="row">
+                                <div class="col-xs-4" style="font-size: 18px; font-weight: bold; color: #1E87F0;" >
+                                    דולר
+                                </div>
+                                <div class="col-xs-5" style="font-size: 18px; font-weight: bold;" >
+                                    28.02.2021
+                                </div>
+                                <div class="col-xs-3" style="font-size: 18px; font-weight: bold;" >
+                                    3.211
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4" style="font-size: 18px; font-weight: bold; color: #1E87F0;" >
+                                    יורו
+                                </div>
+                                <div class="col-xs-5" style="font-size: 18px; font-weight: bold;" >
+                                    28.02.2021
+                                </div>
+                                <div class="col-xs-3" style="font-size: 18px; font-weight: bold;" >
+                                    3.211
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-xs-4" style="font-size: 18px; font-weight: bold; color: #1E87F0;" >
+                                    מדד
+                                </div>
+                                <div class="col-xs-5" style="font-size: 18px; font-weight: bold;" >
+                                    28.02.2021
+                                </div>
+                                <div class="col-xs-3" style="font-size: 18px; font-weight: bold;" >
+                                    3.211
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- jQuery Version 1.11.0 -->
+        <script src="js/jquery-1.11.0.js"></script>
+
+        <!-- Bootstrap Core JavaScript -->
+        <script src="js/bootstrap.min.js"></script>
+
+        <!-- Metis Menu Plugin JavaScript -->
+        <script src="js/metisMenu/metisMenu.min.js"></script>
+
+        <!-- Custom Theme JavaScript -->
+        <script src="js/sb-admin-2.js"></script>
+
+        <!-- Compressed JavaScript -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/foundation-sites@6.6.3/dist/js/foundation.min.js"
+            integrity="sha256-pRF3zifJRA9jXGv++b06qwtSqX1byFQOLjqa2PTEb2o="crossorigin="anonymous"></script>
+    </body>
+
+</html>

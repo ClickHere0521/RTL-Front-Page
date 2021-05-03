@@ -430,6 +430,17 @@ input[id="cb1"] {
   border-radius: 50%;
 }
 
+.checkmark-2 {
+  position: absolute;
+  top: 0;
+  /* left: 0; */
+  height: 23px;
+  width: 23px;
+  background-color: transparent;
+  border: 2px solid #78849e;
+  border-radius: 26%;
+}
+
 /* On mouse-over, add a grey background color */
 .custom-radio:hover input ~ .checkmark {
   background-color: #ccc;
@@ -443,6 +454,12 @@ input[id="cb1"] {
 
 /* Create the indicator (the dot/circle - hidden when not checked) */
 .checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+.checkmark-2:after {
   content: "";
   position: absolute;
   display: none;
@@ -462,6 +479,21 @@ input[id="cb1"] {
   border-radius: 50%;
   background: #78849e;
 }
+
+.custom-radio input:checked ~ .checkmark-2:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.custom-radio .checkmark-2:after {
+  top: 3px;
+  left: 3px;
+  width: 13px;
+  height: 13px;
+  border-radius: 26%;
+  background: #78849e;
+}
+
 #btn1 {
   background-color: #bfc5d2;
   border-bottom-right-radius: 10px;
@@ -589,4 +621,61 @@ a:hover {
   border-radius: 30px;
   padding-top: 12px;
   padding-bottom: 12px;
+}
+.das-sidebar-item > div {
+  margin-top: 64px;
+}
+.das-search {  
+  position: relative;
+  display: flex;
+  margin-top: 50px;
+}
+
+.das-searchTerm {
+  width: 100%;
+  border: 3px solid #00B4CC;
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9DBFAF;
+  height: 70px !important;
+  border-radius: 20px !important;
+  padding-right: 30px !important;
+}
+
+.das-searchTerm:focus{
+  color: #00B4CC;
+}
+
+.das-searchButton {
+  color: #1E87F0;
+  cursor: pointer;
+  font-size: 24px;
+  position: absolute;
+  left: 42px;
+  top: 22px;
+}
+tbody tr:nth-child(even) {
+  border-bottom: 0;
+  background-color: transparent !important;
+}
+thead {
+  background: transparent !important;
+  
+}
+tbody, tfoot, thead {
+  border: 0px !important;
+  background-color: #fefefe;
+}
+.table>thead>tr>th {  
+  border-bottom: 0px solid #ddd !important;
+}
+table {
+  text-align: end !important;
+  font-size: 16px;
+}
+tbody>tr>td {
+  padding-bottom: 24px !important;
 }
