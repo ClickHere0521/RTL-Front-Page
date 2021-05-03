@@ -124,7 +124,7 @@
 
                         <div class="das-tbl col-md-10" >
                             <div class="row" style="padding-top: 20px; padding-right: 30px; padding-left: 40px; padding-bottom: 10px; background-color: white; box-shadow: 0px 1px 5px rgb(0 0 0 / 30%); border-radius: 18px; margin-top: 20px; height: 40vh; margin-left: 0px; margin-right: 0px;">
-                                <div style="display: none;">
+                                <div id="das-cnt-1" style="display: block;">
                                     <div class="das-tbl-head">
                                         <p style="font-size: 24px; font-weight: bold; color: #1E87F0;">ימי הולדת של לקוחות</p>
                                     </div>
@@ -189,7 +189,7 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div style="display: none;">
+                                <div id="das-cnt-2" style="display: none;">
                                     <div class="das-tbl-head">
                                         <p style="font-size: 24px; font-weight: bold; color: #1E87F0;">משימות בטיפול</p>
                                     </div>
@@ -239,20 +239,137 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div style="display: block;">
+                                <div id="das-cnt-3" style="display: none;">
                                     <div class="das-tbl-head row">
-                                        <div class="col-md-2">
+                                        <div class="col-md-3">
                                             <p style="font-size: 24px; font-weight: bold; color: #1E87F0;">תזכורות</p>
                                         </div>
                                         <div class="col-md-1">
-                                            <p>חודש</p>
-                                        </div>שבוע
+                                            <p style="font-size: 18px; color: #1E87F0; font-weight: bold; margin-top: 4px;">חודש</p>
+                                        </div>
                                         <div class="col-md-1">
-                                            <p>שבוע</p>
+                                            <p style="font-size: 18px; color: #1E87F0; font-weight: bold; margin-top: 4px;">שבוע</p>
                                         </div>
-                                        <div class="col-md-8">
-                                            <p>יום</p>
+                                        <div class="col-md-7" style="text-align: end;">
+                                            <a class="btn btn-das-small" style="background-color: #1A70C6; border-radius:50px; padding: 3px 30px; color: white; font-weight: bold; font-size: 18px;  " >יום</a>
                                         </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom: 10px;" >
+                                        <div class="col-md-2">
+                                            <p style="background-color: #1A70C6; border-radius:50px; padding: 3px 30px; color: white; font-weight: bold; font-size: 18px;  ">תזכורת</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <p style="background-color: #BFC5D2; border-radius:50px; padding: 3px 30px; color: white; font-weight: bold; font-size: 18px; ">פגישה</p>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom: 10px;" >
+                                        <div class="col-md-2" style="border-right: 3px solid red; margin-right: 17px;">
+                                            <p style="font-size: 20px; font-weight: bold; color: #485272; margin-bottom: 0;" >נושא</p>
+                                            <p style="font-size: 16px; color: #BBBEC7; margin-bottom: 0;">סימולטור</p>
+                                        </div>
+                                        <div class="col-md-7"></div>
+                                        <div class="col-md-2" style="text-align: end; padding-top: 16px; margin-right: 50px;">
+                                            <p style="background-color: #1A70C6; border-radius:50px; padding: 3px 30px; color: white; font-weight: bold; font-size: 18px;  ">תזכורת</p>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom: 10px;" >
+                                        <div class="col-md-2" style="border-right: 3px solid red; margin-right: 17px;">
+                                            <p style="font-size: 20px; font-weight: bold; color: #485272; margin-bottom: 0;" >נושא</p>
+                                            <p style="font-size: 16px; color: #BBBEC7; margin-bottom: 0;">סימולטור</p>
+                                        </div>
+                                        <div class="col-md-7"></div>
+                                        <div class="col-md-2" style=" padding-top: 16px; margin-right: 50px;">
+                                            <p style="background-color: #BFC5D2; border-radius:50px; padding: 3px 30px; color: white; font-weight: bold; font-size: 18px; ">פגישה</p>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom: 10px;" >
+                                        <div class="col-md-2" style="border-right: 3px solid #BFC5D2; margin-right: 17px;">
+                                            <p style="font-size: 20px; font-weight: bold; color: #485272; margin-bottom: 0;" >נושא</p>
+                                            <p style="font-size: 16px; color: #BBBEC7; margin-bottom: 0;">סימולטור</p>
+                                        </div>
+                                        <div class="col-md-7"></div>
+                                        <div class="col-md-2" style="text-align: end; padding-top: 16px; margin-right: 50px;">
+                                            <p style="background-color: #1A70C6; border-radius:50px; padding: 3px 30px; color: white; font-weight: bold; font-size: 18px;  ">תזכורת</p>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom: 10px;" >
+                                        <div class="col-md-2" style="border-right: 3px solid #2CA01C; margin-right: 17px;">
+                                            <p style="font-size: 20px; font-weight: bold; color: #485272; margin-bottom: 0;" >נושא</p>
+                                            <p style="font-size: 16px; color: #BBBEC7; margin-bottom: 0;">סימולטור</p>
+                                        </div>
+                                        <div class="col-md-7"></div>
+                                        <div class="col-md-2" style="text-align: end; padding-top: 16px; margin-right: 50px;">
+                                            <p style="background-color: #1A70C6; border-radius:50px; padding: 3px 30px; color: white; font-weight: bold; font-size: 18px;  ">תזכורת</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="das-cnt-4" style="display: none;">
+                                    <div class="das-tbl-head row">
+                                        <div class="col-md-3">
+                                            <p style="font-size: 24px; font-weight: bold; color: #1E87F0;">תזכורות</p>
+                                        </div>
+                                        <div class="col-md-1">
+                                            <p style="font-size: 18px; color: #1E87F0; font-weight: bold; margin-top: 4px;">חודש</p>
+                                        </div>
+                                        <div class="col-md-1">
+                                            <p style="font-size: 18px; color: #1E87F0; font-weight: bold; margin-top: 4px;">שבוע</p>
+                                        </div>
+                                        <div class="col-md-7" style="text-align: end;">
+                                            <a class="btn btn-das-small" style="background-color: #1A70C6; border-radius:50px; padding: 3px 30px; color: white; font-weight: bold; font-size: 18px;  " >יום</a>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom: 10px;" >
+                                        <div class="col-md-2">
+                                            <p style="background-color: #BFC5D2; border-radius:50px; padding: 3px 30px; color: white; font-weight: bold; font-size: 18px;  ">תזכורת</p>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <p style="background-color: #1A70C6; border-radius:50px; padding: 3px 30px; color: white; font-weight: bold; font-size: 18px; ">פגישה</p>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom: 10px;" >
+                                        <div class="col-md-2" style="border-right: 3px solid red; margin-right: 17px;">
+                                            <p style="font-size: 20px; font-weight: bold; color: #485272; margin-bottom: 0;" >נושא</p>
+                                            <p style="font-size: 16px; color: #BBBEC7; margin-bottom: 0;">סימולטור</p>
+                                        </div>
+                                        <div class="col-md-7"></div>
+                                        <div class="col-md-2" style="text-align: end; padding-top: 16px; margin-right: 50px;">
+                                            <p style="background-color: #1A70C6; border-radius:50px; padding: 3px 30px; color: white; font-weight: bold; font-size: 18px;  ">תזכורת</p>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom: 10px;" >
+                                        <div class="col-md-2" style="border-right: 3px solid red; margin-right: 17px;">
+                                            <p style="font-size: 20px; font-weight: bold; color: #485272; margin-bottom: 0;" >נושא</p>
+                                            <p style="font-size: 16px; color: #BBBEC7; margin-bottom: 0;">סימולטור</p>
+                                        </div>
+                                        <div class="col-md-7"></div>
+                                        <div class="col-md-2" style=" padding-top: 16px; margin-right: 50px;">
+                                            <p style="background-color: #BFC5D2; border-radius:50px; padding: 3px 30px; color: white; font-weight: bold; font-size: 18px; ">פגישה</p>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom: 10px;" >
+                                        <div class="col-md-2" style="border-right: 3px solid #BFC5D2; margin-right: 17px;">
+                                            <p style="font-size: 20px; font-weight: bold; color: #485272; margin-bottom: 0;" >נושא</p>
+                                            <p style="font-size: 16px; color: #BBBEC7; margin-bottom: 0;">סימולטור</p>
+                                        </div>
+                                        <div class="col-md-7"></div>
+                                        <div class="col-md-2" style="text-align: end; padding-top: 16px; margin-right: 50px;">
+                                            <p style="background-color: #1A70C6; border-radius:50px; padding: 3px 30px; color: white; font-weight: bold; font-size: 18px;  ">תזכורת</p>
+                                        </div>
+                                    </div>
+                                    <div class="row" style="margin-bottom: 10px;" >
+                                        <div class="col-md-2" style="border-right: 3px solid #2CA01C; margin-right: 17px;">
+                                            <p style="font-size: 20px; font-weight: bold; color: #485272; margin-bottom: 0;" >נושא</p>
+                                            <p style="font-size: 16px; color: #BBBEC7; margin-bottom: 0;">סימולטור</p>
+                                        </div>
+                                        <div class="col-md-7"></div>
+                                        <div class="col-md-2" style="text-align: end; padding-top: 16px; margin-right: 50px;">
+                                            <p style="background-color: #1A70C6; border-radius:50px; padding: 3px 30px; color: white; font-weight: bold; font-size: 18px;  ">תזכורת</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="das-cnt-5" style="display: none;">
+                                    <div class="das-tbl-head">
+                                        <p style="font-size: 24px; font-weight: bold; color: #1E87F0;">חריגים</p>
                                     </div>
                                     <div class="row" style="margin-bottom: 10px;" >
                                         <div class="col-md-2" style="border-right: 3px solid red; margin-right: 17px;">

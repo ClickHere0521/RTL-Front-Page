@@ -113,6 +113,11 @@ $("#das-btn-1").click(function () {
   $("#das-btn-spn-3").css({"color": "#515151"});
   $("#das-btn-spn-4").css({"color": "#515151"});
   $("#das-btn-spn-5").css({"color": "#515151"});
+  $("#das-cnt-1").css({"display": "block"});
+  $("#das-cnt-2").css({"display": "none"});
+  $("#das-cnt-3").css({"display": "none"});
+  $("#das-cnt-4").css({"display": "none"});
+  $("#das-cnt-5").css({"display": "none"});
 });
 
 $("#das-btn-2").click(function () {
@@ -126,6 +131,11 @@ $("#das-btn-2").click(function () {
   $("#das-btn-spn-3").css({"color": "#515151"});
   $("#das-btn-spn-4").css({"color": "#515151"});
   $("#das-btn-spn-5").css({"color": "#515151"});
+  $("#das-cnt-1").css({"display": "none"});
+  $("#das-cnt-2").css({"display": "block"});
+  $("#das-cnt-3").css({"display": "none"});
+  $("#das-cnt-4").css({"display": "none"});
+  $("#das-cnt-5").css({"display": "none"});
 });
 
 $("#das-btn-3").click(function () {
@@ -139,6 +149,11 @@ $("#das-btn-3").click(function () {
   $("#das-btn-spn-3").css({"color": "#FFFFFF"});
   $("#das-btn-spn-4").css({"color": "#515151"});
   $("#das-btn-spn-5").css({"color": "#515151"});
+  $("#das-cnt-1").css({"display": "none"});
+  $("#das-cnt-2").css({"display": "none"});
+  $("#das-cnt-3").css({"display": "block"});
+  $("#das-cnt-4").css({"display": "none"});
+  $("#das-cnt-5").css({"display": "none"});
 });
 
 $("#das-btn-4").click(function () {
@@ -152,6 +167,11 @@ $("#das-btn-4").click(function () {
   $("#das-btn-spn-3").css({"color": "#515151"});
   $("#das-btn-spn-4").css({"color": "#FFFFFF"});
   $("#das-btn-spn-5").css({"color": "#515151"});
+  $("#das-cnt-1").css({"display": "none"});
+  $("#das-cnt-2").css({"display": "none"});
+  $("#das-cnt-3").css({"display": "none"});
+  $("#das-cnt-4").css({"display": "block"});
+  $("#das-cnt-5").css({"display": "none"});
 });
 
 $("#das-btn-5").click(function () {
@@ -165,4 +185,9 @@ $("#das-btn-5").click(function () {
   $("#das-btn-spn-3").css({"color": "#515151"});
   $("#das-btn-spn-4").css({"color": "#515151"});
   $("#das-btn-spn-5").css({"color": "#FFFFFF"});
+  $("#das-cnt-1").css({"display": "none"});
+  $("#das-cnt-2").css({"display": "none"});
+  $("#das-cnt-3").css({"display": "none"});
+  $("#das-cnt-4").css({"display": "none"});
+  $("#das-cnt-5").css({"display": "block"});
 });
