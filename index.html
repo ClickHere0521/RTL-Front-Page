@@ -33,6 +33,9 @@
     <link href="css/font-awesome/font-awesome.min.css" rel="stylesheet" type="text/css">
 
     <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
+
+    <!-- datepicker-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/css/bootstrap-datepicker3.css"/>            
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -135,7 +138,7 @@
                     <div style="border-radius: 50%; background-color: white; width: 30px; height: 30px; color: #7ABCFF; font-size: 20px; font-weight: bold; padding-right: 9px; padding-top: 3px;">
                         6
                     </div>
-                    <div style="font-size: 18px; color: white; padding: 3px 12px;">
+                    <div style="font-size: 16px; color: white; padding: 3px 12px; padding-left: 0;">
                         מגעים בטיפולך
                     </div>
                 </div>
@@ -143,7 +146,7 @@
                     <div style="border-radius: 50%; background-color: white; width: 30px; height: 30px; color: #DF974F; font-size: 20px; font-weight: bold; padding-right: 9px; padding-top: 3px;">
                         7
                     </div>
-                    <div style="font-size: 18px; color: white; padding: 3px 12px;">
+                    <div style="font-size: 16px; color: white; padding: 3px 12px;">
                         מגעים באיחור
                     </div>
                 </div>
@@ -151,7 +154,7 @@
                     <div style="border-radius: 50%; background-color: white; width: 30px; height: 30px; color: #C56D6D; font-size: 20px; font-weight: bold; padding-right: 9px; padding-top: 3px;">
                         2
                     </div>
-                    <div style="font-size: 18px; color: white; padding: 3px 12px;">
+                    <div style="font-size: 16px; color: white; padding: 3px 12px;">
                         מגעים דחופים
                     </div>
                 </div>
@@ -159,7 +162,7 @@
                     <div style="border-radius: 50%; background-color: white; width: 30px; height: 30px; color: #59A44F; font-size: 20px; font-weight: bold; padding-right: 9px; padding-top: 3px;">
                         2
                     </div>
-                    <div style="font-size: 18px; color: white; padding: 3px 12px;">
+                    <div style="font-size: 16px; color: white; padding: 3px 12px;">
                         מגעים מתוזכרים
                     </div>
                 </div>
@@ -167,7 +170,7 @@
                     <div style="border-radius: 50%; background-color: white; width: 30px; height: 30px; color: #78849E; font-size: 20px; font-weight: bold; padding-right: 4px; padding-top: 3px;">
                         26
                     </div>
-                    <div style="font-size: 18px; color: white; padding: 3px 12px;">
+                    <div style="font-size: 16px; color: white; padding: 3px 12px;">
                         כל המגעים
                     </div>
                 </div>
@@ -234,20 +237,31 @@
                             
                         </td>
                         <td>
-                            <div class="crm-td">
-                                <span>03.09.2020</span>
-                                <img src="./images/ic_date_range_24px.svg">
+                            <div class="crm-td" style="width: 40px;">
+                                <div class='input-group date' id='datetimepicker1'>
+                                    <input type='text' class="form-control" style="border: 0; box-shadow: none; padding: 0; background-color: transparent; margin-top: -9px; margin-bottom: -10px; font-size: 12px;"  placeholder="05/21/2021"/>                                       
+                                    <span class="input-group-addon" style="background: transparent; border: 0; display: none">
+                                    
+                                    </span>
+                                </div>
+                                <img src="./images/ic_date_range_24px.svg" style="width: 16px; margin-left: 1px;" >
                             </div>
                         </td>
                         <td>
-                            <div class="crm-td">
-                                <span style="padding-left: 31px;">14:32</span>
-                                <img src="./images/ic_schedule_24px.svg">
+                            <div class="crm-td" style="width: 40px;">
+                                <div class='input-group date' id='timepicker1'>
+                                    <input type='text' class="form-control" style="border: 0; box-shadow: none; padding: 0; background-color: transparent; margin-top: -9px; margin-bottom: -10px; font-size: 12px;"  placeholder="14:32"/> 
+                                    <span class="input-group-addon" style="background: transparent; border: 0; display: none">
+                                    
+                                    </span>
+                                </div>
+                                <img src="./images/ic_schedule_24px.svg" style="width: 16px; margin-left: 1px;" >
                             </div>
+
                         </td>
                         <td>
                             <div class="crm-td">
-                                <span style="padding-left: 46px;">הילה</span>
+                                <select class="form-control" style="padding-left: 46px; border: 0; box-shadow: none; background-color: transparent; margin-bottom: -8px; margin-top: -9px;"><option>הילה</option><option>הילה</option></select>
                                 <img src="./images/ic_arrow_down.svg">
                             </div>
                         </td>
@@ -298,9 +312,14 @@
                             </div>
                         </td>
                         <td>
-                            <div class="crm-td">
-                                <span>03.09.2020</span>
-                                <img src="./images/ic_date_range_24px.svg">
+                            <div class="crm-td" style="width: 40px;">
+                                <div class='input-group date' id='datetimepicker2'>
+                                    <input type='text' class="form-control" style="border: 0; box-shadow: none; padding: 0; background-color: transparent; margin-top: -9px; margin-bottom: -10px; font-size: 12px;"  placeholder="05/21/2021"/>                                       
+                                    <span class="input-group-addon" style="background: transparent; border: 0; display: none">
+                                    
+                                    </span>
+                                </div>
+                                <img src="./images/ic_date_range_24px.svg" style="width: 16px; margin-left: 1px;" >
                             </div>
                         </td>
                     </tr>
@@ -881,10 +900,10 @@
                             <div class="dropdown2">
                                 <button class="dropbtn2">בתהליך</button>
                                 <div class="dropdown-content2">
-                                <span href="#">Link 1</span>
-                                <span href="#">Link 2</span>
-                                <span href="#">Link 3</span>
-                                <span href="#">Link 3</span>
+                                <span >Link 1</span>
+                                <span >Link 2</span>
+                                <span >Link 3</span>
+                                <span >Link 3</span>
                                 <p></p>
                                 </div>
                             </div>
@@ -916,8 +935,8 @@
         </div>
     </div>
     <div class="crm-modal" style="z-index: 3; display: none; position: absolute; left: 0; color: #515151; ">
-        <div class="crm-side-modal" style="width: 700px; height: 100vh; background-color: #F4F6FC; border-right: 16px solid #7ABBFC;">
-            <div class="crm-side-modal-container" style="padding: 40px 70px;">
+        <div class="crm-side-modal" style="width: 700px; height: 120vh; background-color: #F4F6FC; border-right: 16px solid #7ABBFC;">
+            <div class="crm-side-modal-container" style="padding: 0px 50px;">
                 <div class="crm-side-header" style="font-size: 35px; ">
                     מגע חדש
                 </div>
@@ -989,7 +1008,7 @@
                     </div>
                     <div class="form-group">
                         <label for="textarea">פרטי טיפול</label>
-                        <textarea class="form-control" id="textarea" rows="3" style="height: 120px;"></textarea>
+                        <textarea class="form-control" id="textarea" rows="3" style="height: 80px;"></textarea>
                     </div>
                     <div class="form-group">
                         <label for="email">תוצאות המגע</label>
@@ -1023,7 +1042,7 @@
                     <button type="submit" class="btn crm-btn-submit" style=" border: 0; border-radius: 50px; padding: 5px 50px; background: linear-gradient(to bottom, #A0FF8F, #21D102); font-size: 18px; color: white; "><span>שמור</span><img src="./images/ic_save_24px.svg" style="position: absolute; margin-right: 17px; width: 16px; margin-top: 4px;"></button>
                 </form>
             </div>
-            <div class="crm-side-modal-container2" style="padding: 40px 70px;">
+            <div class="crm-side-modal-container2" style="padding: 0px 50px; display: none;">
                 <div class="crm-side-header" style="font-size: 35px; ">
                     SMS משלוח 
                 </div>
@@ -1104,7 +1123,7 @@
                     </div>
                 </form>
             </div>
-            <div class="crm-side-modal-container3" style="padding: 40px 70px; display: none;">
+            <div class="crm-side-modal-container3" style="padding: 0px 50px; display: none;">
                 <div class="crm-side-header" style="font-size: 35px; ">
                     שליחת אימייל 
                 </div>
@@ -1214,7 +1233,7 @@
                     <button type="submit" class="btn crm-btn-submit" style="margin-top: 10px; margin-bottom: 10px; border: 0; border-radius: 50px; padding: 5px 50px; background: linear-gradient(to bottom, #A0FF8F, #21D102); font-size: 18px; color: #F9F9F9; "><span>שלח</span><img src="./images/ic_send_24px.svg" style="position: absolute; margin-right: 17px; width: 16px; margin-top: 4px;"></button>
                 </form>
             </div>
-            <div class="crm-side-modal-container4" style="padding: 40px 70px; display: none;">
+            <div class="crm-side-modal-container4" style="padding: 0px 50px; display: none;">
                 <div style="position: absolute; left: 27px; top: 25px;"><a class="btn crm-btn-dismiss"><img src="./images/ic_dismiss.svg" style="width: 26px;"></a></div>       
                 <div class="crm-side-header" style="font-size: 35px; margin-bottom: 30px;">
                     תזכורת
@@ -1258,7 +1277,7 @@
             </div>
         </div>
     </div>
-    <div id="crm-modal-back" style="background-color: #BFC5D2; position: absolute; display: none; z-index: 1; width: 100vw; height: 100vh; opacity: 0.82;"></div>
+    <div id="crm-modal-back" style="background-color: #BFC5D2; position: absolute; display: none; z-index: 1; width: 100vw; height: 120vh; opacity: 0.82;"></div>
     <!-- /#wrapper -->
 
     <!-- jQuery Version 1.11.0 -->
@@ -1278,6 +1297,43 @@
     <script src="js/sb-admin-2.js"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.4.1/js/bootstrap-datepicker.min.js"></script>
+            
+    <script>
+        $(function () {
+            $(function () {
+                $('#datetimepicker1').datepicker({
+                    autoclose: true,
+                    format: 'mm/dd/yyyy',   
+                    todayHighlight: true,                     
+                    // orientation: 'bottom'
+                });
+                $('#datetimepicker1').click(function(){
+                    var popup =$(this).offset();
+                    console.log(popup)
+                    var popupTop = popup.top - 40;
+                    $('.ui-datepicker').css({
+                    'top' : popupTop
+                    });
+                });
+                $('#datetimepicker2').datepicker({
+                    autoclose: true,
+                    format: 'mm/dd/yyyy',   
+                    todayHighlight: true,                     
+                    // orientation: 'bottom'
+                });
+                $('#datetimepicker2').click(function(){
+                    var popup =$(this).offset();
+                    console.log(popup)
+                    var popupTop = popup.top - 40;
+                    $('.ui-datepicker').css({
+                    'top' : popupTop
+                    });
+                });
+            });
+        });
+    </script>
 
     <script>
         $(document).ready(function() {

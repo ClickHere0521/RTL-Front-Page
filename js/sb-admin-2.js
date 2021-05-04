@@ -196,6 +196,7 @@ $('.crm-btn-add').click(function () {
   $("#crm-modal-back").css({"display": "block"});
   $(".crm-side-modal-container").css({"display": "block"});
   $(".crm-side-modal-container2").css({"display": "none"});
+  $(".crm-side-modal-container3").css({"display": "none"});
   $(".crm-side-modal-container4").css({"display": "none"});
 });
 $('#crm-row-edit').click(function () {
@@ -203,6 +204,7 @@ $('#crm-row-edit').click(function () {
   $("#crm-modal-back").css({"display": "block"});
   $(".crm-side-modal-container").css({"display": "block"});
   $(".crm-side-modal-container2").css({"display": "none"});
+  $(".crm-side-modal-container3").css({"display": "none"});
   $(".crm-side-modal-container4").css({"display": "none"});
 });
 $('#crm-row-qa').click(function () {
@@ -210,6 +212,7 @@ $('#crm-row-qa').click(function () {
   $("#crm-modal-back").css({"display": "block"});
   $(".crm-side-modal-container").css({"display": "none"});
   $(".crm-side-modal-container2").css({"display": "none"});
+  $(".crm-side-modal-container3").css({"display": "none"});
   $(".crm-side-modal-container4").css({"display": "block"});
 });
 $('.crm-btn-dismiss').click(function () {
@@ -224,6 +227,7 @@ $("#crm-sms").click(function () {
   $(".crm-modal").css({"display": "block"});
   $("#crm-modal-back").css({"display": "block"});
   $(".crm-side-modal-container").css({"display": "none"});
+  $(".crm-side-modal-container4").css({"display": "none"});
   $(".crm-side-modal-container2").css({"display": "block"});
   $(".crm-side-modal-container3").css({"display": "none"});
 })
@@ -233,6 +237,7 @@ $("#crm-apt").click(function () {
   $(".crm-side-modal-container").css({"display": "none"});
   $(".crm-side-modal-container2").css({"display": "none"});
   $(".crm-side-modal-container3").css({"display": "block"});
+  $(".crm-side-modal-container4").css({"display": "none"});
 })
 $(".crm-hover-modal").mouseover(function () {
   $(".crm-hover-modal-container").css({"background-color": "white", "border-radius": "10px", "box-shadow": "0px 1px 5px rgb(0 0 0 / 30%)"});

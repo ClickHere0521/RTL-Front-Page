@@ -658,7 +658,7 @@ a:hover {
   padding-bottom: 12px;
 }
 .das-sidebar-item > div {
-  margin-top: 64px;
+  margin-top: 4vh;
 }
 .das-search {
   position: relative;
@@ -747,7 +747,7 @@ table {
   margin: 10px 5px;
   display: inline-flex;
   padding: 5px;
-  font-size: 14px;
+  font-size: 12px;
   min-width: 6vw;
 }
 .crm-td span {
@@ -854,17 +854,14 @@ table {
 }
 .crm-side-modal-container label {
   color: #7abbfc;
-  font-size: 18px;
   font-weight: bold;
 }
 .crm-side-modal-container2 label {
   color: #7abbfc;
-  font-size: 18px;
   font-weight: bold;
 }
 .form-control {
   background-color: #f9f9f9;
-  height: 40px;
 }
 .crm-side-modal-container input::-webkit-input-placeholder {
   font-size: 14px;
@@ -1050,4 +1047,12 @@ table {
 .crm-table {
   margin-right: 70px;
   margin-left: 40px;
+}
+.datimeline-badge img {
+  width: 16px;
+}
+select.form-control {
+  -moz-appearance: none;
+   -webkit-appearance: none;
+   appearance: none;
 }
