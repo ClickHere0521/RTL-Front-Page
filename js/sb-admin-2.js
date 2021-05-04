@@ -191,3 +191,54 @@ $("#das-btn-5").click(function () {
   $("#das-cnt-4").css({"display": "none"});
   $("#das-cnt-5").css({"display": "block"});
 });
+$('.crm-btn-add').click(function () {
+  $(".crm-modal").css({"display": "block"});
+  $("#crm-modal-back").css({"display": "block"});
+  $(".crm-side-modal-container").css({"display": "block"});
+  $(".crm-side-modal-container2").css({"display": "none"});
+  $(".crm-side-modal-container4").css({"display": "none"});
+});
+$('#crm-row-edit').click(function () {
+  $(".crm-modal").css({"display": "block"});
+  $("#crm-modal-back").css({"display": "block"});
+  $(".crm-side-modal-container").css({"display": "block"});
+  $(".crm-side-modal-container2").css({"display": "none"});
+  $(".crm-side-modal-container4").css({"display": "none"});
+});
+$('#crm-row-qa').click(function () {
+  $(".crm-modal").css({"display": "block"});
+  $("#crm-modal-back").css({"display": "block"});
+  $(".crm-side-modal-container").css({"display": "none"});
+  $(".crm-side-modal-container2").css({"display": "none"});
+  $(".crm-side-modal-container4").css({"display": "block"});
+});
+$('.crm-btn-dismiss').click(function () {
+  $(".crm-modal").css({"display": "none"});
+  $("#crm-modal-back").css({"display": "none"});
+});
+$('.crm-btn-submit').click(function () {
+  $(".crm-modal").css({"display": "none"});
+  $("#crm-modal-back").css({"display": "none"});
+});
+$("#crm-sms").click(function () {
+  $(".crm-modal").css({"display": "block"});
+  $("#crm-modal-back").css({"display": "block"});
+  $(".crm-side-modal-container").css({"display": "none"});
+  $(".crm-side-modal-container2").css({"display": "block"});
+  $(".crm-side-modal-container3").css({"display": "none"});
+})
+$("#crm-apt").click(function () {
+  $(".crm-modal").css({"display": "block"});
+  $("#crm-modal-back").css({"display": "block"});
+  $(".crm-side-modal-container").css({"display": "none"});
+  $(".crm-side-modal-container2").css({"display": "none"});
+  $(".crm-side-modal-container3").css({"display": "block"});
+})
+$(".crm-hover-modal").mouseover(function () {
+  $(".crm-hover-modal-container").css({"background-color": "white", "border-radius": "10px", "box-shadow": "0px 1px 5px rgb(0 0 0 / 30%)"});
+  $(".crm-hover-modal-inputs").css({"opacity": "1"});
+});
+$(".crm-hover-modal").mouseout(function () {
+  $(".crm-hover-modal-container").css({"background-color": "transparent", "border-radius": "0", "box-shadow": "0px 1px 5px rgb(0 0 0 / 0%)"});
+  $(".crm-hover-modal-inputs").css({"opacity": "0"});
+});

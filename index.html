@@ -32,6 +32,7 @@
     <!-- Custom Fonts -->
     <link href="css/font-awesome/font-awesome.min.css" rel="stylesheet" type="text/css">
 
+    <link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.css" rel="stylesheet">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -43,887 +44,1223 @@
 
 <body>
 
-    <div id="wrapper">
-
+    <div id="wrapper" style="color: #78849E; z-index: 1; position: absolute; display: block;">
         <!-- Navigation -->
-        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="index.html">SB Admin v2.0</a>
-            </div>
-            <!-- /.navbar-header -->
-
-            <ul class="nav navbar-top-links navbar-right">
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-envelope fa-fw"></i> <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-messages">
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <strong>John Smith</strong>
-                                    <span class="pull-right text-muted">
-                                        <em>Yesterday</em>
-                                    </span>
-                                </div>
-                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <strong>John Smith</strong>
-                                    <span class="pull-right text-muted">
-                                        <em>Yesterday</em>
-                                    </span>
-                                </div>
-                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <strong>John Smith</strong>
-                                    <span class="pull-right text-muted">
-                                        <em>Yesterday</em>
-                                    </span>
-                                </div>
-                                <div>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque eleifend...</div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a class="text-center" href="#">
-                                <strong>Read All Messages</strong>
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-messages -->
-                </li>
-                <!-- /.dropdown -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-tasks fa-fw"></i> <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-tasks">
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <p>
-                                        <strong>Task 1</strong>
-                                        <span class="pull-right text-muted">40% Complete</span>
-                                    </p>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
-                                            <span class="sr-only">40% Complete (success)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <p>
-                                        <strong>Task 2</strong>
-                                        <span class="pull-right text-muted">20% Complete</span>
-                                    </p>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" style="width: 20%">
-                                            <span class="sr-only">20% Complete</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <p>
-                                        <strong>Task 3</strong>
-                                        <span class="pull-right text-muted">60% Complete</span>
-                                    </p>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
-                                            <span class="sr-only">60% Complete (warning)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <p>
-                                        <strong>Task 4</strong>
-                                        <span class="pull-right text-muted">80% Complete</span>
-                                    </p>
-                                    <div class="progress progress-striped active">
-                                        <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width: 80%">
-                                            <span class="sr-only">80% Complete (danger)</span>
-                                        </div>
-                                    </div>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a class="text-center" href="#">
-                                <strong>See All Tasks</strong>
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-tasks -->
-                </li>
-                <!-- /.dropdown -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-bell fa-fw"></i> <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-alerts">
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-comment fa-fw"></i> New Comment
-                                    <span class="pull-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                    <span class="pull-right text-muted small">12 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
-                                    <span class="pull-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-tasks fa-fw"></i> New Task
-                                    <span class="pull-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a href="#">
-                                <div>
-                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                    <span class="pull-right text-muted small">4 minutes ago</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="divider"></li>
-                        <li>
-                            <a class="text-center" href="#">
-                                <strong>See All Alerts</strong>
-                                <i class="fa fa-angle-right"></i>
-                            </a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-alerts -->
-                </li>
-                <!-- /.dropdown -->
-                <li class="dropdown">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                        <i class="fa fa-user fa-fw"></i> <i class="fa fa-caret-down"></i>
-                    </a>
-                    <ul class="dropdown-menu dropdown-user">
-                        <li><a href="#"><i class="fa fa-user fa-fw"></i> User Profile</a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-gear fa-fw"></i> Settings</a>
-                        </li>
-                        <li class="divider"></li>
-                        <li><a href="login.html"><i class="fa fa-sign-out fa-fw"></i> Logout</a>
-                        </li>
-                    </ul>
-                    <!-- /.dropdown-user -->
-                </li>
-                <!-- /.dropdown -->
-            </ul>
-            <!-- /.navbar-top-links -->
-
-            <div class="navbar-default sidebar" role="navigation">
-                <div class="sidebar-nav navbar-collapse">
-                    <ul class="nav" id="side-menu">
-                        <li class="sidebar-search">
-                            <div class="input-group custom-search-form">
-                                <input type="text" class="form-control" placeholder="Search...">
-                                <span class="input-group-btn">
-                                <button class="btn btn-default" type="button">
-                                    <i class="fa fa-search"></i>
-                                </button>
-                            </span>
-                            </div>
-                            <!-- /input-group -->
-                        </li>
-                        <li>
-                            <a class="active" href="index.html"><i class="fa fa-dashboard fa-fw"></i> Dashboard</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-bar-chart-o fa-fw"></i> Charts<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="flot.html">Flot Charts</a>
-                                </li>
-                                <li>
-                                    <a href="morris.html">Morris.js Charts</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="tables.html"><i class="fa fa-table fa-fw"></i> Tables</a>
-                        </li>
-                        <li>
-                            <a href="forms.html"><i class="fa fa-edit fa-fw"></i> Forms</a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-wrench fa-fw"></i> UI Elements<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="panels-wells.html">Panels and Wells</a>
-                                </li>
-                                <li>
-                                    <a href="buttons.html">Buttons</a>
-                                </li>
-                                <li>
-                                    <a href="notifications.html">Notifications</a>
-                                </li>
-                                <li>
-                                    <a href="typography.html">Typography</a>
-                                </li>
-                                <li>
-                                    <a href="grid.html">Grid</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-sitemap fa-fw"></i> Multi-Level Dropdown<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="#">Second Level Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Second Level Item</a>
-                                </li>
-                                <li>
-                                    <a href="#">Third Level <span class="fa arrow"></span></a>
-                                    <ul class="nav nav-third-level">
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                        <li>
-                                            <a href="#">Third Level Item</a>
-                                        </li>
-                                    </ul>
-                                    <!-- /.nav-third-level -->
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-files-o fa-fw"></i> Sample Pages<span class="fa arrow"></span></a>
-                            <ul class="nav nav-second-level">
-                                <li>
-                                    <a href="blank.html">Blank Page</a>
-                                </li>
-                                <li>
-                                    <a href="login.html">Login Page</a>
-                                </li>
-                            </ul>
-                            <!-- /.nav-second-level -->
-                        </li>
-                    </ul>
-                </div>
-                <!-- /.sidebar-collapse -->
-            </div>
-            <!-- /.navbar-static-side -->
+        <nav class="navbar navbar-default navbar-static-top" role="navigation" style="margin-bottom: 0; display: inline-flex; padding: 10px 40px;">
+            <img src="./images/ic_account_circle_24px.svg" style="margin-bottom: 9px; margin-left: 5px;">
+            <img src="./images/ic_account_badge_blue.svg" style="position: absolute; margin-top: -2px; margin-right: -2px;">
+            <p style="font-size: 20px; color: #000000;">שם משתמש</p>
+            <img src="./images/icon_down-arrow-small.svg" style="margin-right: 6px; margin-bottom: 6px;">
         </nav>
-
-        <div id="page-wrapper">
-            <div class="row">
-                <div class="col-lg-12">
-                    <h1 class="page-header">Dashboard</h1>
-                </div>
-                <!-- /.col-lg-12 -->
+        <nav class="navbar navbar-inverse" style="background: #485272;
+        border-radius: 0;
+        border: 0;">
+            <div class="">
+              <div class="navbar-header" style="background-color: #78849E; padding: 6px 60px;">
+                <a class="navbar-brand" href="#" style="font-size: 36px; color: white;">LOGO</a>
+              </div>
+              <ul class="nav navbar-nav" id="crm-black-nav">
+                <li><a href="#">לקוחות</a></li>
+                <li><a href="#">סימולטור</a></li>
+                <li style="background-color: #1A70C6;"><a href="#">CRM</a></li>
+                <li><a href="#">מעקב ביצוע</a></li>
+                <li><a href="#">ניהול וקליטת נתונים</a></li>
+                <li><a href="#">דוחות</a></li>
+              </ul>
             </div>
-            <!-- /.row -->
+          </nav>
+        <div class="crm-containier" style="margin-right: 70px; margin-left: 40px;">
             <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <i class="fa fa-comments fa-5x"></i>
-                                </div>
-                                <div class="col-xs-8 text-right">
-                                    <div class="huge">26</div>
-                                    <div>New Comments!</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
+                <div class="col-md-1" style="font-size: 35px;">
+                    CRM
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-green">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <i class="fa fa-tasks fa-5x"></i>
-                                </div>
-                                <div class="col-xs-8 text-right">
-                                    <div class="huge">12</div>
-                                    <div>New Tasks!</div>
-                                </div>
-                            </div>
-                        </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
-                    </div>
+                <div class="col-md-2" style="padding: 0px 40px; margin-top: 4px;">
+                    <a class="btn crm-btn-add" style="display: flex; border: 0; border-radius: 50px; padding: 5px 50px; background: linear-gradient(to bottom, #9BF190, #2CA01C)">
+                        <p style="font-size: 18px; color: white; padding: 5px; margin-bottom: 0; ">הוסף מגע</p>
+                        <img src="./images/ic_add_circle_outline_24px.svg" style="margin-right: 10px">
+                    </a>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-yellow">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <i class="fa fa-shopping-cart fa-5x"></i>
-                                </div>
-                                <div class="col-xs-8 text-right">
-                                    <div class="huge">124</div>
-                                    <div>New Orders!</div>
-                                </div>
-                            </div>
+                <div class="col-md-6"></div>
+                <div class="col-md-3 crm-labels">
+                    <div>
+                        <div style="background-color: #7ABBFC; border-radius: 50%; width: 44px; height: 44px;">
+                            <img src="./images/ic_notifications_active_24px.svg" style="padding: 10px;">                        
                         </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
+                        <div>
+                            תזכורת
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="panel panel-red">
-                        <div class="panel-heading">
-                            <div class="row">
-                                <div class="col-xs-4">
-                                    <i class="fa fa-support fa-5x"></i>
-                                </div>
-                                <div class="col-xs-8 text-right">
-                                    <div class="huge">13</div>
-                                    <div>Support Tickets!</div>
-                                </div>
-                            </div>
+                    <div>
+                        <div style="background-color: #7ABBFC; border-radius: 50%; width: 44px; height: 44px;">
+                            <img src="./images/ic_local_printshop_24px.svg" style="padding: 12px;">
                         </div>
-                        <a href="#">
-                            <div class="panel-footer">
-                                <span class="pull-left">View Details</span>
-                                <span class="pull-right"><i class="fa fa-arrow-circle-right"></i></span>
-                                <div class="clearfix"></div>
-                            </div>
-                        </a>
+                        <div>
+                            הדפס
+                        </div>
+                    </div>
+                    <div>
+                        <div style="background-color: #7ABBFC; border-radius: 50%; width: 44px; height: 44px;">
+                            <img src="./images/ic_xls.svg" style="padding: 9px 12px;">
+                        </div>
+                        <div>
+                            אקסל 
+                        </div>
+                    </div>
+                    <div>
+                        <div id="crm-sms" style="background-color: #7ABBFC; border-radius: 50%; width: 44px; height: 44px; cursor: pointer;">
+                            <img src="./images/ic_chat_bubble_24px.svg" style="padding: 12px;">
+                        </div>
+                        <div>
+                            SMS
+                        </div>
+                    </div>
+                    <div>
+                        <div id="crm-apt" style="background-color: #7ABBFC; border-radius: 50%; width: 44px; height: 44px; cursor: pointer;">
+                            <img src="./images/ic_mail_24px.svg" style="padding: 12px;">
+                        </div>
+                        <div>
+                            אימייל
+                        </div>
+                    </div>
+                    <div>
+                        <div style="background-color: #7ABBFC; border-radius: 50%; width: 44px; height: 44px;">
+                            <img src="./images/ic_delete_24px.svg" style="padding: 11px 14px;">
+                        </div>
+                        <div>
+                            מחק
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- /.row -->
-            <div class="row">
-                <div class="col-lg-8">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Area Chart Example
-                            <div class="pull-left">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                        Actions
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu pull-left" role="menu">
-                                        <li><a href="#">Action</a>
-                                        </li>
-                                        <li><a href="#">Another action</a>
-                                        </li>
-                                        <li><a href="#">Something else here</a>
-                                        </li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div id="morris-area-chart"></div>
-                        </div>
-                        <!-- /.panel-body -->
+            <div class="crm-head-btn" style="display: inline-flex; margin: 10px 0px;">
+                <div style="background: #7ABCFF; border-radius: 9px; width: 13vw; display: inline-flex; padding: 10px 16px;">
+                    <div style="border-radius: 50%; background-color: white; width: 30px; height: 30px; color: #7ABCFF; font-size: 20px; font-weight: bold; padding-right: 9px; padding-top: 3px;">
+                        6
                     </div>
-                    <!-- /.panel -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example
-                            <div class="pull-left">
-                                <div class="btn-group">
-                                    <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                        Actions
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu pull-left" role="menu">
-                                        <li><a href="#">Action</a>
-                                        </li>
-                                        <li><a href="#">Another action</a>
-                                        </li>
-                                        <li><a href="#">Something else here</a>
-                                        </li>
-                                        <li class="divider"></li>
-                                        <li><a href="#">Separated link</a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="row">
-                                <div class="col-lg-12">
-                                    <div class="table-responsive">
-                                        <table class="table table-bordered table-hover table-striped">
-                                            <thead>
-                                                <tr>
-                                                    <th>#</th>
-                                                    <th>Date</th>
-                                                    <th>Time</th>
-                                                    <th>Amount</th>
-                                                </tr>
-                                            </thead>
-                                            <tbody>
-                                                <tr>
-                                                    <td>3326</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>3:29 PM</td>
-                                                    <td>$321.33</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3325</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>3:20 PM</td>
-                                                    <td>$234.34</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3324</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>3:03 PM</td>
-                                                    <td>$724.17</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3323</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>3:00 PM</td>
-                                                    <td>$23.71</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3322</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>2:49 PM</td>
-                                                    <td>$8345.23</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3321</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>2:23 PM</td>
-                                                    <td>$245.12</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3320</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>2:15 PM</td>
-                                                    <td>$5663.54</td>
-                                                </tr>
-                                                <tr>
-                                                    <td>3319</td>
-                                                    <td>10/21/2013</td>
-                                                    <td>2:13 PM</td>
-                                                    <td>$943.45</td>
-                                                </tr>
-                                            </tbody>
-                                        </table>
-                                    </div>
-                                    <!-- /.table-responsive -->
-                                </div>
-                                <!-- /.col-lg-4 (nested) -->
-                                <div class="col-lg-8">
-                                    <div id="morris-bar-chart"></div>
-                                </div>
-                                <!-- /.col-lg-8 (nested) -->
-                            </div>
-                            <!-- /.row -->
-                        </div>
-                        <!-- /.panel-body -->
+                    <div style="font-size: 18px; color: white; padding: 3px 12px;">
+                        מגעים בטיפולך
                     </div>
-                    <!-- /.panel -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <i class="fa fa-clock-o fa-fw"></i> Responsive Timeline
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <ul class="timeline">
-                                <li>
-                                    <div class="timeline-badge"><i class="fa fa-check"></i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
-                                            <p><small class="text-muted"><i class="fa fa-clock-o"></i> 11 hours ago via Twitter</small>
-                                            </p>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero laboriosam dolor perspiciatis omnis exercitationem. Beatae, officia pariatur? Est cum veniam excepturi. Maiores praesentium, porro voluptas suscipit
-                                                facere rem dicta, debitis.</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-inverted">
-                                    <div class="timeline-badge warning"><i class="fa fa-credit-card"></i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Autem dolorem quibusdam, tenetur commodi provident cumque magni voluptatem libero, quis rerum. Fugiat esse debitis optio, tempore. Animi officiis alias,
-                                                officia repellendus.</p>
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laudantium maiores odit qui est tempora eos, nostrum provident explicabo dignissimos debitis vel! Adipisci eius voluptates, ad aut recusandae minus eaque
-                                                facere.</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="timeline-badge danger"><i class="fa fa-bomb"></i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Repellendus numquam facilis enim eaque, tenetur nam id qui vel velit similique nihil iure molestias aliquam, voluptatem totam quaerat, magni commodi
-                                                quisquam.</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-inverted">
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptates est quaerat asperiores sapiente, eligendi, nihil. Itaque quos, alias sapiente rerum quas odit! Aperiam officiis quidem delectus libero, omnis
-                                                ut debitis!</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="timeline-badge info"><i class="fa fa-save"></i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis minus modi quam ipsum alias at est molestiae excepturi delectus nesciunt, quibusdam debitis amet, beatae consequuntur impedit nulla qui! Laborum,
-                                                atque.</p>
-                                            <hr>
-                                            <div class="btn-group">
-                                                <button type="button" class="btn btn-primary btn-sm dropdown-toggle" data-toggle="dropdown">
-                                                    <i class="fa fa-gear"></i> <span class="caret"></span>
-                                                </button>
-                                                <ul class="dropdown-menu" role="menu">
-                                                    <li><a href="#">Action</a>
-                                                    </li>
-                                                    <li><a href="#">Another action</a>
-                                                    </li>
-                                                    <li><a href="#">Something else here</a>
-                                                    </li>
-                                                    <li class="divider"></li>
-                                                    <li><a href="#">Separated link</a>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sequi fuga odio quibusdam. Iure expedita, incidunt unde quis nam! Quod, quisquam. Officia quam qui adipisci quas consequuntur nostrum sequi. Consequuntur,
-                                                commodi.</p>
-                                        </div>
-                                    </div>
-                                </li>
-                                <li class="timeline-inverted">
-                                    <div class="timeline-badge success"><i class="fa fa-graduation-cap"></i>
-                                    </div>
-                                    <div class="timeline-panel">
-                                        <div class="timeline-heading">
-                                            <h4 class="timeline-title">Lorem ipsum dolor</h4>
-                                        </div>
-                                        <div class="timeline-body">
-                                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt obcaecati, quaerat tempore officia voluptas debitis consectetur culpa amet, accusamus dolorum fugiat, animi dicta aperiam, enim incidunt quisquam
-                                                maxime neque eaque.</p>
-                                        </div>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- /.panel-body -->
-                    </div>
-                    <!-- /.panel -->
                 </div>
-                <!-- /.col-lg-8 -->
-                <div class="col-lg-4">
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <i class="fa fa-bell fa-fw"></i> Notifications Panel
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <div class="list-group">
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-comment fa-fw"></i> New Comment
-                                    <span class="pull-right text-muted small"><em>4 minutes ago</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-twitter fa-fw"></i> 3 New Followers
-                                    <span class="pull-right text-muted small"><em>12 minutes ago</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-envelope fa-fw"></i> Message Sent
-                                    <span class="pull-right text-muted small"><em>27 minutes ago</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-tasks fa-fw"></i> New Task
-                                    <span class="pull-right text-muted small"><em>43 minutes ago</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-upload fa-fw"></i> Server Rebooted
-                                    <span class="pull-right text-muted small"><em>11:32 AM</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-bolt fa-fw"></i> Server Crashed!
-                                    <span class="pull-right text-muted small"><em>11:13 AM</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-warning fa-fw"></i> Server Not Responding
-                                    <span class="pull-right text-muted small"><em>10:57 AM</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-shopping-cart fa-fw"></i> New Order Placed
-                                    <span class="pull-right text-muted small"><em>9:49 AM</em>
-                                    </span>
-                                </a>
-                                <a href="#" class="list-group-item">
-                                    <i class="fa fa-money fa-fw"></i> Payment Received
-                                    <span class="pull-right text-muted small"><em>Yesterday</em>
-                                    </span>
-                                </a>
-                            </div>
-                            <!-- /.list-group -->
-                            <a href="#" class="btn btn-default btn-block">View All Alerts</a>
-                        </div>
-                        <!-- /.panel-body -->
+                <div style="background: #DF974F; border-radius: 9px; width: 13vw; display: inline-flex; padding: 10px 16px;">
+                    <div style="border-radius: 50%; background-color: white; width: 30px; height: 30px; color: #DF974F; font-size: 20px; font-weight: bold; padding-right: 9px; padding-top: 3px;">
+                        7
                     </div>
-                    <!-- /.panel -->
-                    <div class="panel panel-default">
-                        <div class="panel-heading">
-                            <i class="fa fa-bar-chart-o fa-fw"></i> Donut Chart Example
-                        </div>
-                        <div class="panel-body">
-                            <div id="morris-donut-chart"></div>
-                            <a href="#" class="btn btn-default btn-block">View Details</a>
-                        </div>
-                        <!-- /.panel-body -->
+                    <div style="font-size: 18px; color: white; padding: 3px 12px;">
+                        מגעים באיחור
                     </div>
-                    <!-- /.panel -->
-                    <div class="chat-panel panel panel-default">
-                        <div class="panel-heading">
-                            <i class="fa fa-comments fa-fw"></i> Chat
-                            <div class="btn-group pull-left">
-                                <button type="button" class="btn btn-default btn-xs dropdown-toggle" data-toggle="dropdown">
-                                    <i class="fa fa-chevron-down"></i>
-                                </button>
-                                <ul class="dropdown-menu slidedown pull-left">
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-refresh fa-fw"></i> Refresh
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-check-circle fa-fw"></i> Available
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-times fa-fw"></i> Busy
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-clock-o fa-fw"></i> Away
-                                        </a>
-                                    </li>
-                                    <li class="divider"></li>
-                                    <li>
-                                        <a href="#">
-                                            <i class="fa fa-sign-out fa-fw"></i> Sign Out
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                        <!-- /.panel-heading -->
-                        <div class="panel-body">
-                            <ul class="chat">
-                                <li class="left clearfix">
-                                    <span class="chat-img pull-left">
-                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
-                                    </span>
-                                    <div class="chat-body clearfix">
-                                        <div class="header">
-                                            <strong class="primary-font">Jack Sparrow</strong>
-                                            <small class="pull-right text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i> 12 mins ago
-                                            </small>
-                                        </div>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="right clearfix">
-                                    <span class="chat-img pull-right">
-                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
-                                    </span>
-                                    <div class="chat-body clearfix">
-                                        <div class="header">
-                                            <small class=" text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i> 13 mins ago</small>
-                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
-                                        </div>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="left clearfix">
-                                    <span class="chat-img pull-left">
-                                        <img src="http://placehold.it/50/55C1E7/fff" alt="User Avatar" class="img-circle" />
-                                    </span>
-                                    <div class="chat-body clearfix">
-                                        <div class="header">
-                                            <strong class="primary-font">Jack Sparrow</strong>
-                                            <small class="pull-right text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i> 14 mins ago</small>
-                                        </div>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                                        </p>
-                                    </div>
-                                </li>
-                                <li class="right clearfix">
-                                    <span class="chat-img pull-right">
-                                        <img src="http://placehold.it/50/FA6F57/fff" alt="User Avatar" class="img-circle" />
-                                    </span>
-                                    <div class="chat-body clearfix">
-                                        <div class="header">
-                                            <small class=" text-muted">
-                                                <i class="fa fa-clock-o fa-fw"></i> 15 mins ago</small>
-                                            <strong class="pull-right primary-font">Bhaumik Patel</strong>
-                                        </div>
-                                        <p>
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur bibendum ornare dolor, quis ullamcorper ligula sodales.
-                                        </p>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                        <!-- /.panel-body -->
-                        <div class="panel-footer">
-                            <div class="input-group">
-                                <input id="btn-input" type="text" class="form-control input-sm" placeholder="Type your message here..." />
-                                <span class="input-group-btn">
-                                    <button class="btn btn-warning btn-sm" id="btn-chat">
-                                        Send
-                                    </button>
-                                </span>
-                            </div>
-                        </div>
-                        <!-- /.panel-footer -->
-                    </div>
-                    <!-- /.panel .chat-panel -->
                 </div>
-                <!-- /.col-lg-4 -->
+                <div style="background: #C56D6D; border-radius: 9px; width: 13vw; display: inline-flex; padding: 10px 16px;">
+                    <div style="border-radius: 50%; background-color: white; width: 30px; height: 30px; color: #C56D6D; font-size: 20px; font-weight: bold; padding-right: 9px; padding-top: 3px;">
+                        2
+                    </div>
+                    <div style="font-size: 18px; color: white; padding: 3px 12px;">
+                        מגעים דחופים
+                    </div>
+                </div>
+                <div style="background: #59A44F; border-radius: 9px; width: 13vw; display: inline-flex; padding: 10px 16px;">
+                    <div style="border-radius: 50%; background-color: white; width: 30px; height: 30px; color: #59A44F; font-size: 20px; font-weight: bold; padding-right: 9px; padding-top: 3px;">
+                        2
+                    </div>
+                    <div style="font-size: 18px; color: white; padding: 3px 12px;">
+                        מגעים מתוזכרים
+                    </div>
+                </div>
+                <div style="background: #78849E; border-radius: 9px; width: 13vw; display: inline-flex; padding: 10px 16px;">
+                    <div style="border-radius: 50%; background-color: white; width: 30px; height: 30px; color: #78849E; font-size: 20px; font-weight: bold; padding-right: 4px; padding-top: 3px;">
+                        26
+                    </div>
+                    <div style="font-size: 18px; color: white; padding: 3px 12px;">
+                        כל המגעים
+                    </div>
+                </div>
             </div>
-            <!-- /.row -->
         </div>
         <!-- /#page-wrapper -->
-
+        <div class="crm-table" style="margin-right: 70px; margin-left: 40px;">
+            <table style="width: 94vw;   box-shadow: 0px 1px 5px rgb(0 0 0 / 30%);">
+                <thead>
+                    <tr style="height: 50px; background-color: #7ABBFC; box-shadow: 0px 1px 5px rgb(0 0 0 / 30%); color: white;">
+                        <th style="width: 65px;">
+                            <label class="custom-radio" style="color:#485272; right: 16px; padding-bottom: 10px;">
+                                <input type="checkbox">
+                                <span class="checkmark-3" style="border-color: white;"></span>
+                            </label>    
+                        </th>
+                        <th>
+                            <img src="./images/ic_arrow_updown.svg"> תזכורת 
+                        </th>
+                        <th>
+                            <img src="./images/ic_arrow_updown.svg"> תאריך
+                        </th>
+                        <th>
+                            <img src="./images/ic_arrow_updown.svg"> שעה
+                        </th>
+                        <th>
+                            <img src="./images/ic_arrow_updown.svg"> מקבל הפנייה 
+                        </th>
+                        <th>
+                            <img src="./images/ic_arrow_updown.svg"> יוזם המגע
+                        </th>
+                        <th>
+                            <img src="./images/ic_arrow_updown.svg"> שעהשם לקוח
+                        </th>
+                        <th>
+                            <img src="./images/ic_arrow_updown.svg"> סוג תקשורת 
+                        </th>
+                        <th>
+                            <img src="./images/ic_arrow_updown.svg"> מהות המגע 
+                        </th>
+                        <th>
+                            <img src="./images/ic_arrow_updown.svg"> תוצאות המגע
+                        </th>
+                        <th>
+                            <img src="./images/ic_arrow_updown.svg"> גורם מטפל
+                        </th>
+                        <th>
+                            <img src="./images/ic_arrow_updown.svg"> סטטוס טיפול
+                        </th>
+                        <th>
+                            <img src="./images/ic_arrow_updown.svg"> עדיפות
+                        </th>
+                        <th>
+                            <img src="./images/ic_arrow_updown.svg"> מועד סיום טיפול 
+                        </th>
+                    </tr>
+                </thead>
+                <tbody style="background:#f8f8f8">
+                    <tr style="background: #78849E;">
+                        <td>
+                            <img src="./images/ic_calda.svg" style="padding-left: 13px;">
+                        </td>
+                        <td>
+                            
+                        </td>
+                        <td>
+                            <div class="crm-td">
+                                <span>03.09.2020</span>
+                                <img src="./images/ic_date_range_24px.svg">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td">
+                                <span style="padding-left: 31px;">14:32</span>
+                                <img src="./images/ic_schedule_24px.svg">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td">
+                                <span style="padding-left: 46px;">הילה</span>
+                                <img src="./images/ic_arrow_down.svg">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td">
+                                <span>מי מטעם הלקוח</span>
+                                <img src="./images/ic_arrow_down.svg">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td">
+                                <span>נורית ישראלי</span>
+                                <img src="./images/ic_arrow_down.svg">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td">
+                                <span>פנייה טלפונית</span>
+                                <img src="./images/ic_arrow_down.svg">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td">
+                                <span>תיאום פגישת היכרות </span>
+                                <img src="./images/ic_arrow_down.svg">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td">
+                                <span>הועבר לגוף מנהל </span>
+                                <img src="./images/ic_arrow_down.svg">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td">
+                                <span style="padding-left: 52px;"> גנית </span>
+                                <img src="./images/ic_arrow_down.svg">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-btn1">
+                                <span>בתהליך</span>                                
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-btn2">
+                                <span>נמוך</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td">
+                                <span>03.09.2020</span>
+                                <img src="./images/ic_date_range_24px.svg">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid ; box-shadow: 0px 1px 5px rgb(0 0 0 / 30%);">
+                        <td style="display: inline-flex; padding-top: 14px;">
+                            <img src="./images/ic_minus_24px.svg" style="padding-left: 6px;">
+                            <label class="custom-radio" style="color:#485272; padding-bottom: 10px;">
+                                <input type="checkbox">
+                                <span class="checkmark-2"></span>
+                            </label>   
+                        </td>
+                        <td>
+                            <img id="crm-row-edit" src="./images/Edit-small.svg" style="padding-left: 8px; cursor: pointer;">
+                            <img id="crm-row-qa" src="./images/ic_question_answer_24px.svg" style="cursor: pointer;">
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>03.09.2020</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span style="padding-left: 31px;">14:32</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span style="padding-left: 46px;">הילה</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>מי מטעם הלקוח</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>נורית ישראלי</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>פנייה טלפונית</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>תיאום פגישת היכרות </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>הועבר לגוף מנהל </span>
+                                <img src="./images/ic_arrow_down.svg" style="opacity: 0;">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span style="padding-left: 52px;"> גנית </span>
+                                <img src="./images/ic_arrow_down.svg" style="opacity: 0;">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-btn3">
+                                <span>בתהליך</span>                                
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-btn4">
+                                <span>נמוך</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>03.09.2020</span>
+                                <img src="./images/ic_date_range_24px.svg" style="opacity: 0;">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid ; box-shadow: 0px 1px 5px rgb(0 0 0 / 30%);"> 
+                        <td style="display: inline-flex; padding-top: 14px;">
+                            <img src="./images/ic_minus_24px.svg" style="padding-left: 6px;">
+                            <label class="custom-radio" style="color:#485272; padding-bottom: 10px;">
+                                <input type="checkbox">
+                                <span class="checkmark-2"></span>
+                            </label>   
+                        </td>
+                        <td>
+                            <img src="./images/Edit-small.svg" style="padding-left: 8px;">
+                            <img src="./images/ic_question_answer_24px.svg">
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>03.09.2020</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span style="padding-left: 31px;">14:32</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span style="padding-left: 46px;">הילה</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>מי מטעם הלקוח</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>נורית ישראלי</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>פנייה טלפונית</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>תיאום פגישת היכרות </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>הועבר לגוף מנהל </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span style="padding-left: 52px;"> גנית </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-btn3">
+                                <span>בתהליך</span>                                
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-btn4">
+                                <span>נמוך</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>03.09.2020</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid ; box-shadow: 0px 1px 5px rgb(0 0 0 / 30%);">
+                        <td style="display: inline-flex; padding-top: 14px;">
+                            <img src="./images/ic_minus_24px.svg" style="padding-left: 6px;">
+                            <label class="custom-radio" style="color:#485272; padding-bottom: 10px;">
+                                <input type="checkbox">
+                                <span class="checkmark-2"></span>
+                            </label>   
+                        </td>
+                        <td>
+                            <img src="./images/Edit-small.svg" style="padding-left: 8px;">
+                            <img src="./images/ic_question_answer_24px.svg">
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>03.09.2020</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span style="padding-left: 31px;">14:32</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span style="padding-left: 46px;">הילה</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>מי מטעם הלקוח</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>נורית ישראלי</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>פנייה טלפונית</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>תיאום פגישת היכרות </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>הועבר לגוף מנהל </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span style="padding-left: 52px;"> גנית </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-btn3">
+                                <span>בתהליך</span>                                
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-btn4">
+                                <span>נמוך</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>03.09.2020</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid ; box-shadow: 0px 1px 5px rgb(0 0 0 / 30%);">
+                        <td style="display: inline-flex; padding-top: 14px;">
+                            <img src="./images/ic_minus_24px.svg" style="padding-left: 6px;">
+                            <label class="custom-radio" style="color:#485272; padding-bottom: 10px;">
+                                <input type="checkbox">
+                                <span class="checkmark-2"></span>
+                            </label>   
+                        </td>
+                        <td>
+                            <img src="./images/Edit-small.svg" style="padding-left: 8px;">
+                            <img src="./images/ic_question_answer_24px.svg">
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>03.09.2020</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span style="padding-left: 31px;">14:32</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span style="padding-left: 46px;">הילה</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>מי מטעם הלקוח</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>נורית ישראלי</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>פנייה טלפונית</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>תיאום פגישת היכרות </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>הועבר לגוף מנהל </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span style="padding-left: 52px;"> גנית </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-btn3">
+                                <span>בתהליך</span>                                
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-btn4">
+                                <span>נמוך</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>03.09.2020</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid ; box-shadow: 0px 1px 5px rgb(0 0 0 / 30%);">
+                        <td style="display: inline-flex; padding-top: 14px;">
+                            <img src="./images/ic_minus_24px.svg" style="padding-left: 6px;">
+                            <label class="custom-radio" style="color:#485272; padding-bottom: 10px;">
+                                <input type="checkbox">
+                                <span class="checkmark-2"></span>
+                            </label>   
+                        </td>
+                        <td>
+                            <img src="./images/Edit-small.svg" style="padding-left: 8px;">
+                            <img src="./images/ic_question_answer_24px.svg">
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>03.09.2020</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span style="padding-left: 31px;">14:32</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span style="padding-left: 46px;">הילה</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>מי מטעם הלקוח</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>נורית ישראלי</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>פנייה טלפונית</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>תיאום פגישת היכרות </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>הועבר לגוף מנהל </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span style="padding-left: 52px;"> גנית </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-btn3">
+                                <span>בתהליך</span>                                
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-btn4">
+                                <span>נמוך</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>03.09.2020</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid ; box-shadow: 0px 1px 5px rgb(0 0 0 / 30%);">
+                        <td style="display: inline-flex; padding-top: 14px;">
+                            <img src="./images/ic_minus_24px.svg" style="padding-left: 6px;">
+                            <label class="custom-radio" style="color:#485272; padding-bottom: 10px;">
+                                <input type="checkbox">
+                                <span class="checkmark-2"></span>
+                            </label>   
+                        </td>
+                        <td>
+                            <img src="./images/Edit-small.svg" style="padding-left: 8px;">
+                            <img src="./images/ic_question_answer_24px.svg">
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>03.09.2020</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span style="padding-left: 31px;">14:32</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span style="padding-left: 46px;">הילה</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>מי מטעם הלקוח</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>נורית ישראלי</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>פנייה טלפונית</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>תיאום פגישת היכרות </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>הועבר לגוף מנהל </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span style="padding-left: 52px;"> גנית </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-btn3">
+                                <span>בתהליך</span>                                
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-btn4">
+                                <span>נמוך</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>03.09.2020</span>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid ; box-shadow: 0px 1px 5px rgb(0 0 0 / 30%);">
+                        <td style="display: inline-flex; padding-top: 14px;">
+                            <img src="./images/ic_minus_24px.svg" style="padding-left: 6px;">
+                            <label class="custom-radio" style="color:#485272; padding-bottom: 10px;">
+                                <input type="checkbox">
+                                <span class="checkmark-2"></span>
+                            </label>   
+                        </td>
+                        <td>
+                            <img src="./images/Edit-small.svg" style="padding-left: 8px;">
+                            <img src="./images/ic_question_answer_24px.svg">
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>03.09.2020</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span style="padding-left: 31px;">14:32</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span style="padding-left: 46px;">הילה</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>מי מטעם הלקוח</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>נורית ישראלי</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>פנייה טלפונית</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>תיאום פגישת היכרות </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>הועבר לגוף מנהל </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span style="padding-left: 52px;"> גנית </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-btn5">
+                                <span>בתהליך</span>                                
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-btn4">
+                                <span>נמוך</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>03.09.2020</span>
+                                <img src="./images/ic_error_24px.svg" style="width: 16px;">
+                            </div>
+                        </td>
+                    </tr>
+                    <tr style="border-bottom: 1px solid ; box-shadow: 0px 1px 5px rgb(0 0 0 / 30%);">
+                        <td style="display: inline-flex; padding-top: 14px;">
+                            <img src="./images/ic_minus_24px.svg" style="padding-left: 6px;">
+                            <label class="custom-radio" style="color:#485272; padding-bottom: 10px;">
+                                <input type="checkbox">
+                                <span class="checkmark-2"></span>
+                            </label>   
+                        </td>
+                        <td>
+                            <img src="./images/Edit-small.svg" style="padding-left: 8px;">
+                            <img src="./images/ic_question_answer_24px.svg">
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>03.09.2020</span>
+                                <img class="crm-td-body-date" src="./images/ic_date_range_24px.svg" style="opacity: 0;">
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span style="padding-left: 31px;">14:32</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span style="padding-left: 46px;">הילה</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>מי מטעם הלקוח</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>נורית ישראלי</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>פנייה טלפונית</span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>תיאום פגישת היכרות </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>הועבר לגוף מנהל </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span style="padding-left: 52px;"> גנית </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="dropdown2">
+                                <button class="dropbtn2">בתהליך</button>
+                                <div class="dropdown-content2">
+                                <span href="#">Link 1</span>
+                                <span href="#">Link 2</span>
+                                <span href="#">Link 3</span>
+                                <span href="#">Link 3</span>
+                                <p></p>
+                                </div>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-btn5">
+                                <span style="padding-right: 10px;"> נמוך </span>
+                            </div>
+                        </td>
+                        <td>
+                            <div class="crm-td-body">
+                                <span>03.09.2020</span>
+                            </div>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+        <div style="text-align: center; color: #232B46; font-size: 16px;">
+            <ul class = "pagination">
+                <li><a href = "#">&gt;</a></li>
+                <li><a href = "#">1</a></li>
+                <li><a href = "#">2</a></li>
+                <li><a href = "#">3</a></li>
+                <li><a href = "#">4</a></li>
+                <li><a href = "#">5</a></li>
+                <li><a href = "#">&lt;</a></li>
+             </ul>
+        </div>
     </div>
+    <div class="crm-modal" style="z-index: 3; display: none; position: absolute; left: 0; color: #515151; ">
+        <div class="crm-side-modal" style="width: 700px; height: 100vh; background-color: #F4F6FC; border-right: 16px solid #7ABBFC;">
+            <div class="crm-side-modal-container" style="padding: 40px 70px;">
+                <div class="crm-side-header" style="font-size: 35px; ">
+                    מגע חדש
+                </div>
+                <form action="#">                 
+                    <div style="position: absolute; left: 27px; top: 25px;"><a class="btn crm-btn-dismiss"><img src="./images/ic_dismiss.svg" style="width: 26px;"></a></div>   
+                    <div class="form-group">
+                      <label for="email">לקוח</label>
+                      <select class="form-control" id="sel1">
+                        <option>TEXT</option>
+                      </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">שם יוזם המגע</label>
+                        <input type="email" class="form-control" id="email" placeholder="TEXT">
+                    </div>
+                    <div>
+                        <div class="col-md-6 col-sm-6" style="padding-right: 0;">
+                            <div class="form-group">
+                                <label for="email">מקבל פניה</label>
+                                <select class="form-control" id="sel1">
+                                  <option>TEXT</option>
+                                </select>
+                              </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6" style="padding-left: 0;">
+                            <div class="form-group">
+                                <label for="email">יוזם המגע</label>
+                                <select class="form-control" id="sel1">
+                                  <option>TEXT</option>
+                                </select>
+                              </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-md-6 col-sm-6" style="padding-right: 0;">
+                            <div class="form-group">
+                                <label for="email">סוג תקשורת</label>
+                                <select class="form-control" id="sel1">
+                                  <option>TEXT</option>
+                                </select>
+                              </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6" style="padding-left: 0;">
+                            <div class="form-group">
+                                <label for="email">מהות המגע </label>
+                                <select class="form-control" id="sel1">
+                                  <option>TEXT</option>
+                                </select>
+                              </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="col-md-6 col-sm-6" style="padding-right: 0;">
+                            <div class="form-group">
+                                <label for="email">גורם מטפל</label>
+                                <select class="form-control" id="sel1">
+                                  <option>TEXT</option>
+                                </select>
+                              </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6" style="padding-left: 0;">
+                            <div class="form-group">
+                                <label for="email">עדיפות</label>
+                                <select class="form-control" id="sel1">
+                                  <option>TEXT</option>
+                                </select>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="textarea">פרטי טיפול</label>
+                        <textarea class="form-control" id="textarea" rows="3" style="height: 120px;"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">תוצאות המגע</label>
+                        <input type="email" class="form-control" id="email" placeholder="TEXT">
+                    </div>
+                    <div>
+                        <div class="col-md-6 col-sm-6" style="padding-right: 0;">
+                            <div class="form-group">
+                                <label for="email">סטטוס טיפול</label>
+                                <select class="form-control" id="sel1">
+                                  <option>TEXT<img src="./images/ic" ></option>
+                                </select> 
+                              </div>
+                        </div>
+                        <div class="col-md-6 col-sm-6" style="padding-left: 0;">
+                            <div class="form-group">
+                                <label for="email">מועד סיום טיפול </label>
+                                <div class="" style="background-color: #F9F9F9; height: 40px; border: 1px solid #ccc; border-radius: 4px;">
+                                    <div style="padding: 9px 16px 9px 0px;">
+                                        <span>03.09.2020</span>
+                                        <img src="./images/ic_date_range_24px.svg" style="padding-right: 140px;">
+                                    </div>
+                                </div>
+                              </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                      <p class="col-md-6 col-sm-6" style="color: black; font-size: 18px;"> תאריך פנייה <span style="font-weight: bold;">22.12.2020</span></p>
+                      <p class="col-md-6 col-sm-6" style="color: black; font-size: 18px;"> משתמש יוצר <span style="font-weight: bold;">: שם משתמש</span></p>
+                    </div>
+                    <button type="submit" class="btn crm-btn-submit" style=" border: 0; border-radius: 50px; padding: 5px 50px; background: linear-gradient(to bottom, #A0FF8F, #21D102); font-size: 18px; color: white; "><span>שמור</span><img src="./images/ic_save_24px.svg" style="position: absolute; margin-right: 17px; width: 16px; margin-top: 4px;"></button>
+                </form>
+            </div>
+            <div class="crm-side-modal-container2" style="padding: 40px 70px;">
+                <div class="crm-side-header" style="font-size: 35px; ">
+                    SMS משלוח 
+                </div>
+                <form action="#">             
+                    <div style="position: absolute; left: 27px; top: 25px;"><a class="btn crm-btn-dismiss"><img src="./images/ic_dismiss.svg" style="width: 26px;"></a></div>       
+                    <div class="form-group">
+                        <label for="textarea">הודעה</label>
+                        <textarea class="form-control" id="textarea" rows="3" style="height: 260px;" placeholder="TEXT"></textarea>
+                    </div>
+                    <div class="row" style="margin: 0; padding-top: 20px;">
+                        <div class="col-md-4 col-sm-4" style="padding-right: 0;">
+                            <label
+                                class="custom-radio"
+                                style="color:
+                                #485272;
+                                top: 11px;">
+                                <input
+                                    type="checkbox">
+                                <span
+                                    class="checkmark"></span>
+                            </label>
+                            <span style="padding-right: 30px;">שלח לקוח</span>
+                        </div>
+                        <div class="col-md-6 col-sm-6" style="padding-left: 0;">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="מספר טלפון">
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 0;">
+                        <div class="col-md-4 col-sm-4" style="padding-right: 0;">
+                            <label
+                                class="custom-radio"
+                                style="color:
+                                #485272;
+                                top: 11px;">
+                                <input
+                                    type="checkbox">
+                                <span
+                                    class="checkmark"></span>
+                            </label>
+                            <span style="padding-right: 30px;">שלח לעובד החברה</span>
+                        </div>
+                        <div class="col-md-6 col-sm-6" style="padding-left: 0;">
+                            <div class="form-group">
+                                <select class="form-control" id="sel1">
+                                  <option>בחר נציגים מהרשימה<img src="./images/ic" ></option>
+                                </select> 
+                            </div>
+                        </div>     
+                        <div class="col-sm-2">
+                        </div>
+                    </div>
+                    <div class="row crm-hover-modal">
+                        <div class="col-md-7 col-sm-7 crm-hover-modal-container" style="margin-top: 60px;  width: 300px; padding: 20px;">
+                            <p style="color: black; font-size: 18px; font-weight: bold; text-decoration: underline;">הוסף נמנעים</p>
+                            <div class="crm-hover-modal-inputs" style="opacity: 0;">
+                                <div class="form-group" style="display: inline-flex;">
+                                    <input type="email" class="form-control" id="email" placeholder="מספר טלפון" style="width: 240px;">
+                                    <img src="./images/ic_red_minus.svg" style="padding-right: 7px;">
+                                </div>
+                                <div class="form-group" style="display: inline-flex;">
+                                    <input type="email" class="form-control" id="email" placeholder="מספר טלפון" style="width: 240px;">
+                                    <img src="./images/ic_red_minus.svg" style="padding-right: 7px;">
+                                </div>
+                                <div class="form-group" style="display: inline-flex;">
+                                    <input type="email" class="form-control" id="email" placeholder="מספר טלפון" style="width: 240px;">
+                                    <img src="./images/ic_red_minus.svg" style="padding-right: 7px;">
+                                </div>
+                                <div></div>
+                                <img src="./images/ic_green_plus.svg">
+                            </div>
+                            <div></div>
+                            <button type="submit" class="btn crm-btn-submit" style="margin-top: 10px; margin-bottom: 10px; border: 0; border-radius: 50px; padding: 5px 50px; background: linear-gradient(to bottom, #A0FF8F, #21D102); font-size: 18px; color: #F9F9F9; "><span>אישור</span><img src="./images/ic_send_24px.svg" style="position: absolute; margin-right: 17px; width: 16px; margin-top: 4px;"></button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+            <div class="crm-side-modal-container3" style="padding: 40px 70px; display: none;">
+                <div class="crm-side-header" style="font-size: 35px; ">
+                    שליחת אימייל 
+                </div>
+                <form action="#">             
+                    <div style="position: absolute; left: 27px; top: 25px;"><a class="btn crm-btn-dismiss"><img src="./images/ic_dismiss.svg" style="width: 26px;"></a></div>       
+                    <div class="row" style="margin: 0; padding-top: 20px;">
+                        <div class="col-md-4 col-sm-4" style="padding-right: 0;">
+                            <label
+                                class="custom-radio"
+                                style="color:
+                                #485272;
+                                top: 11px;">
+                                <input
+                                    type="checkbox">
+                                <span
+                                    class="checkmark"></span>
+                            </label>
+                            <span style="padding-right: 30px;">שלח לעובד החברה</span>
+                        </div>
+                        <div class="col-md-6 col-sm-6" style="padding-left: 0;">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="בחר נציגים מהרשימה">
+                            </div>
+                        </div>
+                        <div class="col-sm-2">
+                        </div>
+                    </div>
+                    <div class="row" style="margin: 0; padding-top: 20px;">
+                        <div class="col-md-4 col-sm-4" style="padding-right: 0;">
+                            <label
+                                class="custom-radio"
+                                style="color:
+                                #485272;
+                                top: 11px;">
+                                <input
+                                    type="checkbox">
+                                <span
+                                    class="checkmark"></span>
+                            </label>
+                            <span style="padding-right: 30px;">שלח לקוח</span>
+                        </div>
+                    </div>
+                    <div class="row" style="margin:0; padding-top: 20px">
+                        <div class="cod-md-3 col-sm-3" style="padding-right: 0;">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="אל...">
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-9" style="padding-left: 0;">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin:0; padding-top: 20px">
+                        <div class="cod-md-3 col-sm-3" style="padding-right: 0;">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="אותק...">
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-9" style="padding-left: 0;">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin:0; padding-top: 20px">
+                        <div class="cod-md-3 col-sm-3" style="padding-right: 0;">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="מוסתר...">
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-9" style="padding-left: 0;">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin:0; padding-top: 20px">
+                        <div class="cod-md-3 col-sm-3" style="padding-right: 0;">
+                            <div class="form-group">
+                                <input type="email" class="form-control form-control-none" id="email" placeholder="נושא">
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-9" style="padding-left: 0;">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row" style="margin:0; padding-top: 20px">
+                        <div class="cod-md-3 col-sm-3" style="padding-right: 0; padding-top: 8px;">
+                            <div class="form-group">
+                                <img src="./images/ic_attach_file_24px.svg">
+                                <span style="padding-right: 5px">צרף קובץ</span>
+                            </div>
+                        </div>
+                        <div class="col-md-9 col-sm-9" style="padding-left: 0;">
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="email" placeholder="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" id="textarea" rows="3" style="height: 260px;" placeholder="TEXT"></textarea>
+                    </div>
+                    <button type="submit" class="btn crm-btn-submit" style="margin-top: 10px; margin-bottom: 10px; border: 0; border-radius: 50px; padding: 5px 50px; background: linear-gradient(to bottom, #A0FF8F, #21D102); font-size: 18px; color: #F9F9F9; "><span>שלח</span><img src="./images/ic_send_24px.svg" style="position: absolute; margin-right: 17px; width: 16px; margin-top: 4px;"></button>
+                </form>
+            </div>
+            <div class="crm-side-modal-container4" style="padding: 40px 70px; display: none;">
+                <div style="position: absolute; left: 27px; top: 25px;"><a class="btn crm-btn-dismiss"><img src="./images/ic_dismiss.svg" style="width: 26px;"></a></div>       
+                <div class="crm-side-header" style="font-size: 35px; margin-bottom: 30px;">
+                    תזכורת
+                </div>
+                <div id="summernote"><p>טקסט</p></div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <button type="submit" class="btn crm-btn-submit" style="margin-top: 10px; margin-bottom: 10px; border: 0; border-radius: 50px; padding: 5px 50px; background: linear-gradient(to bottom, #A0FF8F, #21D102); font-size: 18px; color: #F9F9F9; "><span>עדכן</span><img src="./images/ic_save_24px.svg" style="position: absolute; margin-right: 17px; width: 16px; margin-top: 4px;"></button>
+                    </div>
+                    <div class="col-md-4"></div>
+                    <div class="col-md-4" style="padding-top: 10px;">
+                        <span>הוסף קובץ</span>
+                        <div class="dropdown">
+                            <button class="dropbtn">(2)</button>
+                            <div class="dropdown-content">
+                              <a href="#">עריכה</a>
+                              <a href="#">עריכה</a>
+                              <a href="#">עריכה</a>
+                            </div>
+                          </div>
+                        <img src="./images/ic_attach_file_24px.svg">
+                    </div>
+                </div>
+                <div class="area" style="background-color: #F9F9F9; border-radius: 6px; height: 300px; box-shadow: 0px 1px 5px rgb(0 0 0 / 20%);">
+                    <div class="area-list" style="background-color: #F9F9F9; border-radius: 6px; height: 160px; width: 100px; box-shadow: 0px 1px 5px rgb(0 0 0 / 20%); margin-top: 30px; margin-right: 30px; position: absolute;">
+                        <img src="./images/ic_arrow_blue_down.svg" style="    margin-top: -20px; margin-right: -10px; width: 30px;">
+                        <div style="padding: 10px 20px;">
+                            <img src="./images/ic_mode_edit_24px.svg">
+                            <span>עריכה</span>
+                        </div>
+                        <div style="padding: 10px 20px;">
+                            <img src="./images/ic_delete_black_24px.svg">
+                            <span>מחק</span>
+                        </div>
+                        <div style="padding: 10px 20px;">
+                            <img src="./images/ic_bookmark_24px.svg">
+                            <span>סימניה</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="crm-modal-back" style="background-color: #BFC5D2; position: absolute; display: none; z-index: 1; width: 100vw; height: 100vh; opacity: 0.82;"></div>
     <!-- /#wrapper -->
 
     <!-- jQuery Version 1.11.0 -->
@@ -942,6 +1279,15 @@
     <!-- Custom Theme JavaScript -->
     <script src="js/sb-admin-2.js"></script>
 
+    <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote.min.js"></script>
+
+    <script>
+        $(document).ready(function() {
+            $('#summernote').summernote({
+                height: 250
+            });
+        });
+    </script>
 </body>
 
 </html>
