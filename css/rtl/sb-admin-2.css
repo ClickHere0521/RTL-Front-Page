@@ -836,6 +836,7 @@ table {
 }
 .crm-td-body:hover {
   border: 2px solid #e9e9e9;
+  padding: 3px;
 }
 .crm-td-body:hover img {
   opacity: 1 !important;
@@ -1055,4 +1056,10 @@ select.form-control {
   -moz-appearance: none;
    -webkit-appearance: none;
    appearance: none;
+}
+.crm-table thead tr td {
+  cursor: pointer;
+}
+.crm-table thead tr th {
+  cursor: pointer;
 }
