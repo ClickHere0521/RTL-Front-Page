@@ -733,9 +733,18 @@ table {
 .crm-labels {
   text-align: end;
   display: inline-flex;
+  direction: ltr;
 }
 .crm-labels > div {
   margin-left: 10px;
+  background-color: #7ABBFC; 
+  border-radius: 50%; 
+  width: 44px; 
+  height: 44px;
+  cursor: pointer;
+}
+.crm-labels > div:hover {
+  background-color: #78849E;
 }
 .crm-labels > div > div {
   text-align: center !important;
@@ -1225,4 +1234,12 @@ select.form-control {
 }
 .crm-td-hover:hover img {
   opacity: 1;
+}
+.dropbtn-profile {
+  background: transparent;
+  border: 0;
+  display: inline-flex;
+}
+textarea::-webkit-input-placeholder {
+  color: #78849E;
 }
