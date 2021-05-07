@@ -640,7 +640,7 @@ const renderTable = (data) => {
       ? `<img onclick="minus(${index})" src="./images/ic_minus_24px.svg" style="padding-left: 6px; cursor: pointer;">`
       : `<img onclick="plus(${index})" src="./images/ic_plus.svg" style="padding-left: 6px; cursor: pointer;">`;
     var text_spread = val.spread
-      ? `<tr><td colspan="13"> <textarea style=" background: transparent; margin:10px; border: 0; font-size: 14px; resize: none; width: 77vw; outline: none; height: 100px; " placeholder="${val.data13}" /><td> <tr>`
+      ? `<tr><td colspan="14"> <textarea style=" background: transparent; margin:10px; border: 0; font-size: 14px; resize: none; width: 82vw; outline: none; height: 100px; " placeholder="${val.data13}" /> </td> </tr>`
       : null;
     row_num = index + 3;
     $("#crm-datatable").append(`
