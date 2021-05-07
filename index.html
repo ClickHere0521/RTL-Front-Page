@@ -459,7 +459,7 @@
         </div>
     </div>
     <div class="crm-modal" style="z-index: 3; display: none; position: absolute; left: 0; color: #515151; ">
-        <div class="crm-side-modal" style="width: 700px; height: 120vh; background-color: #F4F6FC; border-right: 16px solid #7ABBFC;">
+        <div class="crm-side-modal" style="width: 700px; height: 130vh; background-color: #F4F6FC; border-right: 16px solid #7ABBFC;">
             <div class="crm-side-modal-container" style="padding: 50px 50px;">
                 <div class="crm-side-header" style="font-size: 35px; ">
                     מגע חדש
@@ -467,67 +467,153 @@
                 <form action="#">                 
                     <div style="position: absolute; left: 27px; top: 25px;"><a class="btn crm-btn-dismiss"><img src="./images/ic_dismiss.svg" style="width: 26px;"></a></div>   
                     <div class="form-group">
-                      <label for="email">לקוח</label>
-                      <select class="form-control" id="sel1">
-                        <option>TEXT</option>
-                      </select>
+                      <label for="email">גורם מטפל</label>.
+                      <div class="select_mate_edit_header">
+                        <div class="select_mate_edit" data-mate-select="active">
+                          <select name="" onchange="" onclick="return false;" id="">
+                          <option value=""  >הילה</option>
+                          <option value="1">מטעם</option>
+                          <option value="2" >הלקוח</option>
+                          <option value="3">מי</option>
+                              </select>
+                          <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" style="left: 8px;" ><svg fill="#7ABBFC" height="18" viewBox="0 0 24 24" width="18" xmlns="./images/ic_arrow_down.svg">
+                              <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                              <path d="M0-.75h24v24H0z" fill="none"/>
+                          </svg></span>
+                          <div class="cont_list_select_mate">
+                              <ul class="cont_select_int">  </ul> 
+                          </div>
+                        </div>
+                      </div>
                     </div>
                     <div class="form-group">
                         <label for="email">שם יוזם המגע</label>
-                        <input type="email" class="form-control" id="email" placeholder="TEXT">
+                        <input type="email" class="form-control" id="email" placeholder="הילה">
                     </div>
                     <div>
                         <div class="col-md-6 col-sm-6" style="padding-right: 0;">
-                            <div class="form-group">
-                                <label for="email">מקבל פניה</label>
-                                <select class="form-control" id="sel1">
-                                  <option>TEXT</option>
-                                </select>
-                              </div>
+                          <div class="form-group">
+                            <label for="email">גורם מטפל</label>
+                            <div class="select_mate_edit" data-mate-select="active">
+                                <select name="" onchange="" onclick="return false;" id="">
+                                <option value=""  >הילה</option>
+                                <option value="1">מטעם</option>
+                                <option value="2" >הלקוח</option>
+                                <option value="3">מי</option>
+                                    </select>
+                                <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" style="left: 8px;" ><svg fill="#7ABBFC" height="18" viewBox="0 0 24 24" width="18" xmlns="./images/ic_arrow_down.svg">
+                                    <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                    <path d="M0-.75h24v24H0z" fill="none"/>
+                                </svg></span>
+                                <div class="cont_list_select_mate">
+                                    <ul class="cont_select_int">  </ul> 
+                                </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="col-md-6 col-sm-6" style="padding-left: 0;">
-                            <div class="form-group">
-                                <label for="email">יוזם המגע</label>
-                                <select class="form-control" id="sel1">
-                                  <option>TEXT</option>
-                                </select>
-                              </div>
+                          <div class="form-group">
+                            <label for="email">גורם מטפל</label>
+                            <div class="select_mate_edit" data-mate-select="active">
+                                <select name="" onchange="" onclick="return false;" id="">
+                                <option value=""  >הילה</option>
+                                <option value="1">מטעם</option>
+                                <option value="2" >הלקוח</option>
+                                <option value="3">מי</option>
+                                    </select>
+                                <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" style="left: 8px;" ><svg fill="#7ABBFC" height="18" viewBox="0 0 24 24" width="18" xmlns="./images/ic_arrow_down.svg">
+                                    <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                    <path d="M0-.75h24v24H0z" fill="none"/>
+                                </svg></span>
+                                <div class="cont_list_select_mate">
+                                    <ul class="cont_select_int">  </ul> 
+                                </div>
+                            </div>
+                          </div>
                         </div>
                     </div>
                     <div>
                         <div class="col-md-6 col-sm-6" style="padding-right: 0;">
-                            <div class="form-group">
-                                <label for="email">סוג תקשורת</label>
-                                <select class="form-control" id="sel1">
-                                  <option>TEXT</option>
-                                </select>
-                              </div>
+                          <div class="form-group">
+                            <label for="email">גורם מטפל</label>
+                            <div class="select_mate_edit" data-mate-select="active">
+                                <select name="" onchange="" onclick="return false;" id="">
+                                <option value=""  >הילה</option>
+                                <option value="1">מטעם</option>
+                                <option value="2" >הלקוח</option>
+                                <option value="3">מי</option>
+                                    </select>
+                                <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" style="left: 8px;" ><svg fill="#7ABBFC" height="18" viewBox="0 0 24 24" width="18" xmlns="./images/ic_arrow_down.svg">
+                                    <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                    <path d="M0-.75h24v24H0z" fill="none"/>
+                                </svg></span>
+                                <div class="cont_list_select_mate">
+                                    <ul class="cont_select_int">  </ul> 
+                                </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="col-md-6 col-sm-6" style="padding-left: 0;">
-                            <div class="form-group">
-                                <label for="email">מהות המגע </label>
-                                <select class="form-control" id="sel1">
-                                  <option>TEXT</option>
-                                </select>
-                              </div>
+                          <div class="form-group">
+                            <label for="email">גורם מטפל</label>
+                            <div class="select_mate_edit" data-mate-select="active">
+                                <select name="" onchange="" onclick="return false;" id="">
+                                <option value=""  >הילה</option>
+                                <option value="1">מטעם</option>
+                                <option value="2" >הלקוח</option>
+                                <option value="3">מי</option>
+                                    </select>
+                                <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" style="left: 8px;" ><svg fill="#7ABBFC" height="18" viewBox="0 0 24 24" width="18" xmlns="./images/ic_arrow_down.svg">
+                                    <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                    <path d="M0-.75h24v24H0z" fill="none"/>
+                                </svg></span>
+                                <div class="cont_list_select_mate">
+                                    <ul class="cont_select_int">  </ul> 
+                                </div>
+                            </div>
+                          </div>
                         </div>
                     </div>
                     <div>
                         <div class="col-md-6 col-sm-6" style="padding-right: 0;">
                             <div class="form-group">
                                 <label for="email">גורם מטפל</label>
-                                <select class="form-control" id="sel1">
-                                  <option>TEXT</option>
-                                </select>
+                                <div class="select_mate_edit" data-mate-select="active">
+                                    <select name="" onchange="" onclick="return false;" id="">
+                                    <option value=""  >הילה</option>
+                                    <option value="1">מטעם</option>
+                                    <option value="2" >הלקוח</option>
+                                    <option value="3">מי</option>
+                                        </select>
+                                    <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" style="left: 8px;" ><svg fill="#7ABBFC" height="18" viewBox="0 0 24 24" width="18" xmlns="./images/ic_arrow_down.svg">
+                                        <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                        <path d="M0-.75h24v24H0z" fill="none"/>
+                                    </svg></span>
+                                    <div class="cont_list_select_mate">
+                                        <ul class="cont_select_int">  </ul> 
+                                    </div>
+                                </div>
                               </div>
                         </div>
                         <div class="col-md-6 col-sm-6" style="padding-left: 0;">
-                            <div class="form-group">
-                                <label for="email">עדיפות</label>
-                                <select class="form-control" id="sel1">
-                                  <option>TEXT</option>
-                                </select>
-                              </div>
+                          <div class="form-group">
+                            <label for="email">גורם מטפל</label>
+                            <div class="select_mate_edit" data-mate-select="active">
+                                <select name="" onchange="" onclick="return false;" id="">
+                                <option value=""  >הילה</option>
+                                <option value="1">מטעם</option>
+                                <option value="2" >הלקוח</option>
+                                <option value="3">מי</option>
+                                    </select>
+                                <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" style="left: 8px;" ><svg fill="#7ABBFC" height="18" viewBox="0 0 24 24" width="18" xmlns="./images/ic_arrow_down.svg">
+                                    <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                    <path d="M0-.75h24v24H0z" fill="none"/>
+                                </svg></span>
+                                <div class="cont_list_select_mate">
+                                    <ul class="cont_select_int">  </ul> 
+                                </div>
+                            </div>
+                          </div>
                         </div>
                     </div>
                     <div class="form-group">
@@ -536,25 +622,40 @@
                     </div>
                     <div class="form-group">
                         <label for="email">תוצאות המגע</label>
-                        <input type="email" class="form-control" id="email" placeholder="TEXT">
+                        <input type="email" class="form-control" id="email" placeholder="הילה">
                     </div>
                     <div>
                         <div class="col-md-6 col-sm-6" style="padding-right: 0;">
-                            <div class="form-group">
-                                <label for="email">סטטוס טיפול</label>
-                                <select class="form-control" id="sel1">
-                                  <option>TEXT<img src="./images/ic" ></option>
-                                </select> 
-                              </div>
+                          <div class="form-group">
+                            <label for="email">גורם מטפל</label>
+                            <div class="select_mate_edit" data-mate-select="active">
+                                <select name="" onchange="" onclick="return false;" id="">
+                                <option value=""  >הילה</option>
+                                <option value="1">מטעם</option>
+                                <option value="2" >הלקוח</option>
+                                <option value="3">מי</option>
+                                    </select>
+                                <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" style="left: 8px;" ><svg fill="#7ABBFC" height="18" viewBox="0 0 24 24" width="18" xmlns="./images/ic_arrow_down.svg">
+                                    <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                    <path d="M0-.75h24v24H0z" fill="none"/>
+                                </svg></span>
+                                <div class="cont_list_select_mate">
+                                    <ul class="cont_select_int">  </ul> 
+                                </div>
+                            </div>
+                          </div>
                         </div>
                         <div class="col-md-6 col-sm-6" style="padding-left: 0;">
                             <div class="form-group">
                                 <label for="email">מועד סיום טיפול </label>
-                                <div class="" style="background-color: #F9F9F9; height: 40px; border: 1px solid #ccc; border-radius: 4px;">
-                                    <div style="padding: 9px 16px 9px 0px;">
-                                        <span>03.09.2020</span>
-                                        <img src="./images/ic_date_range_24px.svg" style="padding-right: 140px;">
-                                    </div>
+                                <div class="crm-add-datepicker">
+                                  <div class='input-group date' id='crm-add-datetimepicker'>
+                                      <input type='text' class="form-control"  placeholder="14.05.2020" />                                       
+                                      <span class="input-group-addon" style="background: transparent; border: 0; display: none">
+                                      
+                                      </span>
+                                  </div>
+                                  <img src="./images/ic_date_range_24px.svg" style="position: absolute; top: 33px; left: 10px; width: 16px; z-index: 2;" >
                                 </div>
                               </div>
                         </div>
@@ -568,13 +669,13 @@
             </div>
             <div class="crm-side-modal-container2" style="padding: 50px 50px; display: none;">
                 <div class="crm-side-header" style="font-size: 35px; ">
-                    SMS משלוח 
+                    <span style="font-size: 30px;">SMS </span> משלוח 
                 </div>
                 <form action="#">             
                     <div style="position: absolute; left: 27px; top: 25px;"><a class="btn crm-btn-dismiss"><img src="./images/ic_dismiss.svg" style="width: 26px;"></a></div>       
                     <div class="form-group">
                         <label for="textarea">הודעה</label>
-                        <textarea class="form-control" id="textarea" rows="3" style="height: 260px;" placeholder="TEXT"></textarea>
+                        <textarea class="form-control" id="textarea" rows="3" style="height: 260px;" placeholder="הילה"></textarea>
                     </div>
                     <div class="row" style="margin: 0; padding-top: 20px;">
                         <div class="col-md-4 col-sm-4" style="padding-right: 0;">
@@ -613,11 +714,23 @@
                             <span style="padding-right: 30px;">שלח לעובד החברה</span>
                         </div>
                         <div class="col-md-6 col-sm-6" style="padding-left: 0;">
-                            <div class="form-group">
-                                <select class="form-control" id="sel1">
-                                  <option>בחר נציגים מהרשימה<img src="./images/ic" ></option>
-                                </select> 
+                          <div class="form-group">
+                            <div class="select_mate_edit" data-mate-select="active">
+                                <select name="" onchange="" onclick="return false;" id="">
+                                <option value=""  >בחר נציגים מהרשימה</option>
+                                <option value="1">מטעם</option>
+                                <option value="2" >הלקוח</option>
+                                <option value="3">מי</option>
+                                    </select>
+                                <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" style="left: 8px;" ><svg fill="#7ABBFC" height="18" viewBox="0 0 24 24" width="18" xmlns="./images/ic_arrow_down.svg">
+                                    <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                    <path d="M0-.75h24v24H0z" fill="none"/>
+                                </svg></span>
+                                <div class="cont_list_select_mate">
+                                    <ul class="cont_select_int">  </ul> 
+                                </div>
                             </div>
+                          </div>
                         </div>     
                         <div class="col-sm-2">
                         </div>
@@ -626,20 +739,14 @@
                         <div class="col-md-7 col-sm-7 crm-hover-modal-container" style="margin-top: 60px;  width: 300px; padding: 20px;">
                             <p style="color: black; font-size: 18px; font-weight: bold; text-decoration: underline;">הוסף נמנעים</p>
                             <div class="crm-hover-modal-inputs" style="opacity: 0;">
-                                <div class="form-group" style="display: inline-flex;">
-                                    <input type="email" class="form-control" id="email" placeholder="מספר טלפון" style="width: 240px;">
-                                    <img src="./images/ic_red_minus.svg" style="padding-right: 7px;">
-                                </div>
-                                <div class="form-group" style="display: inline-flex;">
-                                    <input type="email" class="form-control" id="email" placeholder="מספר טלפון" style="width: 240px;">
-                                    <img src="./images/ic_red_minus.svg" style="padding-right: 7px;">
-                                </div>
-                                <div class="form-group" style="display: inline-flex;">
-                                    <input type="email" class="form-control" id="email" placeholder="מספר טלפון" style="width: 240px;">
-                                    <img src="./images/ic_red_minus.svg" style="padding-right: 7px;">
-                                </div>
+                                <div class="crm-hover-modal-input-list">
+                                  <!-- <div class="form-group" style="display: inline-flex;">
+                                      <input type="email" class="form-control" id="email" placeholder="מספר טלפון" style="width: 240px;">
+                                      <img src="./images/ic_red_minus.svg" style="padding-right: 7px;">
+                                  </div> -->
+                                </div>                              
                                 <div></div>
-                                <img src="./images/ic_green_plus.svg">
+                                <img onclick="modal_input()" src="./images/ic_green_plus.svg" style="cursor: pointer;" >
                             </div>
                             <div></div>
                             <button type="submit" class="btn crm-btn-submit" style="margin-top: 10px; margin-bottom: 10px; border: 0; border-radius: 50px; padding: 5px 50px; background: linear-gradient(to bottom, #A0FF8F, #21D102); font-size: 18px; color: #F9F9F9; "><span>אישור</span><img src="./images/ic_send_24px.svg" style="position: absolute; margin-right: 17px; width: 16px; margin-top: 4px;"></button>
@@ -668,14 +775,28 @@
                             <span style="padding-right: 30px;">שלח לעובד החברה</span>
                         </div>
                         <div class="col-md-6 col-sm-6" style="padding-left: 0;">
-                            <div class="form-group">
-                                <input type="email" class="form-control" id="email" placeholder="בחר נציגים מהרשימה">
+                          <div class="form-group" style="margin-top: 5px;">
+                            <div class="select_mate_edit" data-mate-select="active">
+                                <select name="" onchange="" onclick="return false;" id="">
+                                <option value=""  >בחר נציגים מהרשימה</option>
+                                <option value="1">מטעם</option>
+                                <option value="2" >הלקוח</option>
+                                <option value="3">מי</option>
+                                    </select>
+                                <p class="selecionado_opcion"  onclick="open_select(this)" ></p><span onclick="open_select(this)" class="icon_select_mate" style="left: 8px;" ><svg fill="#7ABBFC" height="18" viewBox="0 0 24 24" width="18" xmlns="./images/ic_arrow_down.svg">
+                                    <path d="M7.41 7.84L12 12.42l4.59-4.58L18 9.25l-6 6-6-6z"/>
+                                    <path d="M0-.75h24v24H0z" fill="none"/>
+                                </svg></span>
+                                <div class="cont_list_select_mate">
+                                    <ul class="cont_select_int">  </ul> 
+                                </div>
                             </div>
+                          </div>
                         </div>
                         <div class="col-sm-2">
                         </div>
                     </div>
-                    <div class="row" style="margin: 0; padding-top: 20px;">
+                    <div class="row" style="margin: 0; padding-top: 10px;">
                         <div class="col-md-4 col-sm-4" style="padding-right: 0;">
                             <label
                                 class="custom-radio"
@@ -741,7 +862,13 @@
                     <div class="row" style="margin:0; padding-top: 20px">
                         <div class="cod-md-3 col-sm-3" style="padding-right: 0; padding-top: 8px;">
                             <div class="form-group">
-                                <img src="./images/ic_attach_file_24px.svg">
+                              <div class="image-upload">
+                                  <label for="file-input">
+                                      <img src="./images/ic_attach_file_24px.svg"/>
+                                  </label>
+                              
+                                  <input id="file-input" type="file"/>
+                              </div>
                                 <span style="padding-right: 5px">צרף קובץ</span>
                             </div>
                         </div>
@@ -752,7 +879,7 @@
                         </div>
                     </div>
                     <div class="form-group">
-                        <textarea class="form-control" id="textarea" rows="3" style="height: 260px;" placeholder="TEXT"></textarea>
+                        <textarea class="form-control" id="textarea" rows="3" style="height: 260px;" placeholder="הילה"></textarea>
                     </div>
                     <button type="submit" class="btn crm-btn-submit" style="margin-top: 10px; margin-bottom: 10px; border: 0; border-radius: 50px; padding: 5px 50px; background: linear-gradient(to bottom, #A0FF8F, #21D102); font-size: 18px; color: #F9F9F9; "><span>שלח</span><img src="./images/ic_send_24px.svg" style="position: absolute; margin-right: 17px; width: 16px; margin-top: 4px;"></button>
                 </form>
@@ -778,30 +905,40 @@
                               <a href="#">עריכה</a>
                             </div>
                           </div>
-                        <img src="./images/ic_attach_file_24px.svg">
+                        <div class="image-upload">
+                            <label for="file-input">
+                                <img src="./images/ic_attach_file_24px.svg"/>
+                            </label>
+                        
+                            <input id="file-input" type="file"/>
+                        </div>
                     </div>
                 </div>
                 <div class="area" style="background-color: #F9F9F9; border-radius: 6px; height: 300px; box-shadow: 0px 1px 5px rgb(0 0 0 / 20%);">
-                    <div class="area-list" style="background-color: #F9F9F9; border-radius: 6px; height: 160px; width: 100px; box-shadow: 0px 1px 5px rgb(0 0 0 / 20%); margin-top: 30px; margin-right: 30px; position: absolute;">
-                        <img src="./images/ic_arrow_blue_down.svg" style="    margin-top: -20px; margin-right: -10px; width: 30px;">
-                        <div style="padding: 10px 20px;">
-                            <img src="./images/ic_mode_edit_24px.svg">
-                            <span>עריכה</span>
-                        </div>
-                        <div style="padding: 10px 20px;">
-                            <img src="./images/ic_delete_black_24px.svg">
-                            <span>מחק</span>
-                        </div>
-                        <div style="padding: 10px 20px;">
-                            <img src="./images/ic_bookmark_24px.svg">
-                            <span>סימניה</span>
-                        </div>
+                    <div class="area-list">
+                        <span id="crm-btn-area-list"><img src="./images/ic_arrow_blue_down.svg" style="position: absolute; margin-top: -20px; margin-right: -10px; width: 30px;"></span>                          
+                        <div class="crm-btn-area-transform crm-btn-area-box">
+                          <div class="crm-btn-area-transform-list crm-btn-area-box-list">
+                              <div style="padding: 10px 20px; padding-top: 30px;">
+                                <img src="./images/ic_mode_edit_24px.svg">
+                                <span>עריכה</span>
+                            </div>
+                            <div style="padding: 10px 20px;">
+                                <img src="./images/ic_delete_black_24px.svg">
+                                <span>מחק</span>
+                            </div>
+                            <div style="padding: 10px 20px;">
+                                <img src="./images/ic_bookmark_24px.svg">
+                                <span>סימניה</span>
+                            </div>
+                          </div>
+                        </div>                        
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    <div id="crm-modal-back" style="background-color: #BFC5D2; position: absolute; display: none; z-index: 1; width: 100vw; height: 120vh; opacity: 0.82;"></div>
+    <div id="crm-modal-back" style="background-color: #BFC5D2; position: absolute; display: none; z-index: 1; width: 100vw; height: 130vh; opacity: 0.82;"></div>
     <!-- /#wrapper -->
 
     <!-- jQuery Version 1.11.0 -->

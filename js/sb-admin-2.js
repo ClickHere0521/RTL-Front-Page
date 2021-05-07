@@ -231,4 +231,7 @@ $('.crm-btn-add').click(function () {
   $(".crm-side-modal-container3").css({"display": "none"});
   $(".crm-side-modal-container4").css({"display": "none"});
 });
-
+$('#crm-btn-area-list').click(function () {
+  $('.crm-btn-area-transform').toggleClass('crm-btn-area-transform-active');
+  $('.crm-btn-area-transform-list').toggleClass('crm-btn-area-box-list-active');
+});

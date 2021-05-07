@@ -801,7 +801,19 @@ const renderTable = (data) => {
       });
       $("#datetimepicker" + i).click(function () {
         var popup = $(this).offset();
-        console.log(popup);
+        var popupTop = popup.top - 40;
+        $(".ui-datepicker").css({
+          top: popupTop,
+        });
+      });
+      $("#crm-add-datetimepicker").datepicker({
+        autoclose: true,
+        format: "mm/dd/yyyy",
+        todayHighlight: true,
+        // orientation: 'bottom'
+      });
+      $("#crm-add-datetimepicker").click(function () {
+        var popup = $(this).offset();
         var popupTop = popup.top - 40;
         $(".ui-datepicker").css({
           top: popupTop,
@@ -991,4 +1003,28 @@ function _select_option(indx, selc) {
   select_.selectedIndex = indx;
   select_.onchange();
   salir_select(selc);
+}
+var num_input = 0;
+function modal_input() {
+  num_input++;
+  if (num_input > 5) {
+    return;
+  }
+  else {
+    $(".crm-hover-modal-input-list").html('');
+    for(i=0;i<num_input;i++)
+    {
+      $(".crm-hover-modal-input-list").append(`
+        <div class="form-group" id="modal-input${i}" style="display: inline-flex;">
+          <input type="email" class="form-control" id="email" placeholder="מספר טלפון" style="width: 240px;">
+          <img onclick="modal_minus(${i})" src="./images/ic_red_minus.svg" style="padding-right: 7px; cursor: pointer;">
+        </div>
+      `);
+    }
+
+  }
+}
+function modal_minus(index) {
+  $("#modal-input"+index).remove();
+  num_input--;
 }
